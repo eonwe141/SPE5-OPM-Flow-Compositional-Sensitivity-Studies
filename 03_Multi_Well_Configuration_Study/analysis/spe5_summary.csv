@@ -1,0 +1,5 @@
+Case,Wells,Inj,Prod,Timesteps,Linearizations,Wall_Time_s
+BASE,3,2,1,263,1141,5.68
+1INJ1PROD,2,1,1,24,88,0.13
+2INJ2PROD,4,2,2,25,87,0.12
+1INJ4PROD,5,1,4,24,88,0.13

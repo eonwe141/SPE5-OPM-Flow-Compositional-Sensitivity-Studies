@@ -1,0 +1,7 @@
+Grid_Type,Cells,Injection_Rate,Timesteps,Runtime_s,Linearizations,Newton_Iters,Status
+Coarse,147,12000,277,4.19,1289,1013,Converged
+Coarse,147,14000,275,4.11,1334,1060,Converged
+Coarse,147,15000,-,-,-,-,FAILED
+Refined,1176,12000,286,15.57,1492,1211,Converged
+Refined,1176,14000,300,17.48,1665,1374,Converged
+Refined,1176,15000,-,-,-,-,FAILED

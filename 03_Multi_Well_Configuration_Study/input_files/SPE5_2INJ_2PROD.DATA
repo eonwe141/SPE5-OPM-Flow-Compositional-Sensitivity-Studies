@@ -1,0 +1,45 @@
+-- Permeability Sensitivity Study - Report 3
+-- Case: 0.5X Permeability, 12,000 rb/day production rate
+
+RUNSPEC
+UNIFIN
+UNIFOUT
+
+TITLE
+   SPE5 - 0.5X PERMEABILITY - 12000 rb/day
+
+WELLDIMS
+ 10 10  5 10 /
+
+INCLUDE
+  'SPE5_PERM_0.5X.BASE' /
+
+RPTRST
+BASIC=2 /
+
+WELSPECS
+  'PROD01' 'G' 7 7 1* 'OIL' 7* /
+  'PROD02' 'G' 1 7 1* 'OIL' 7* /
+  'INJ01'  'G' 1 1 1* 'WATER' 7* /
+  'INJ02'  'G' 7 1 1* 'WATER' 7* /
+/
+
+COMPDAT
+  'PROD01' 7 7 1 1 'OPEN' 1* 32.948 0.311 3047.839 1* 225.984 'Z' 21.925 /
+  'PROD02' 1 7 1 1 'OPEN' 1* 32.948 0.311 3047.839 1* 225.984 'Z' 21.925 /
+  'INJ01'  1 1 1 1 'OPEN' 1* 46.825 0.311 4332.346 1* 225.984 'Z' 21.925 /
+  'INJ02'  7 1 1 1 'OPEN' 1* 46.825 0.311 4332.346 1* 225.984 'Z' 21.925 /
+/
+
+WCONPROD
+  'PROD01' 'OPEN' 'ORAT' 500 4* 500 /
+  'PROD02' 'OPEN' 'ORAT' 500 4* 500 /
+/
+
+WCONINJE
+  'INJ01' 'WATER' 'OPEN' 'RATE' 500 1* 10000 /
+  'INJ02' 'WATER' 'OPEN' 'RATE' 500 1* 10000 /
+/
+
+TSTEP
+  10*365.25 /
