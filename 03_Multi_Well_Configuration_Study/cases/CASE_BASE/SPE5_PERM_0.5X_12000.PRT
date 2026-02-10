@@ -1,0 +1,3971 @@
+
+
+
+ ########  #          ######   #           #
+ #         #         #      #   #         # 
+ #####     #         #      #    #   #   #  
+ #         #         #      #     # # # #   
+ #         #######    ######       #   #    
+
+Flow is a simulator for fully implicit three-phase black-oil flow, and is part of OPM.
+For more information visit: https://opm-project.org 
+
+Flow Version     =  2025.10 (Ubuntu 24.04.3 LTS: 2025.10-1~noble)
+Machine name     =  Ghost (Number of logical cores: 16, Memory size: 7848.19 MB) 
+Operating system =  Linux x86_64 (Kernel: 6.6.87.2-microsoft-standard-WSL2, #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 )
+Build time       =  
+Simulation started on 04-02-2026 at 12:26:19 hrs
+Using 1 MPI processes with 2 OMP threads on each 
+Parameters used by Flow:
+# [known parameters which were specified at run-time]
+EclDeckFileName="SPE5_PERM_0.5X_12000.DATA" # default: ""
+OutputDir="CASE_BASE" # default: ""
+# [parameters which were specified at compile-time]
+AcceleratorMode="none"
+ActionParsingStrictness="normal"
+AddCorners="0"
+AllowDistributedWells="0"
+AllowSplittingInactiveWells="1"
+AlternativeWellRateInit="1"
+CheckGroupConstraintsInnerWellIterations="1"
+CheckSatfuncConsistency="1"
+ContinueOnConvergenceError="0"
+ConvergenceMonitoring="0"
+ConvergenceMonitoringCutOff="6"
+ConvergenceMonitoringDecayFactor="0.75"
+CprReuseInterval="30"
+CprReuseSetup="4"
+CprWeightsThreadParallel="0"
+DbhpMaxRel="1"
+DebugEmitCellPartition="0"
+DebugVerbosityLevel="1"
+DpMaxRel="0.3"
+DsMax="0.2"
+DwellFractionMax="0.2"
+EclOutputDoublePrecision="0"
+EclOutputInterval="-1"
+EdgeConformal="0"
+EdgeWeightsMethod="transmissibility"
+EnableAdaptiveTimeStepping="1"
+EnableAsyncEclOutput="1"
+EnableAsyncVtkOutput="1"
+EnableDriftCompensation="0"
+EnableDryRun="auto"
+EnableEclOutput="1"
+EnableEsmry="0"
+EnableGravity="1"
+EnableGridAdaptation="0"
+EnableIntensiveQuantityCache="1"
+EnableLoggingFalloutWarning="0"
+EnableOpmRstFile="0"
+EnableStorageCache="1"
+EnableTerminalOutput="1"
+EnableThermodynamicHints="0"
+EnableTuning="0"
+EnableVtkOutput="0"
+EnableWellOperabilityCheck="1"
+EnableWellOperabilityCheckIter="0"
+EnableWriteAllSolutions="0"
+EndTime="1e+100"
+ExplicitRockCompaction="0"
+ExternalPartition=""
+ForceDisableFluidInPlaceOutput="0"
+ForceDisableResvFluidInPlaceOutput="0"
+FullTimeStepInitially="0"
+GpuAwareMpi="0"
+GpuDeviceId="0"
+HyNeConfigFile="hybridNewtonConfig.json"
+IgnoreKeywords=""
+IluFillinLevel="0"
+IluRedblack="0"
+IluRelaxation="0.9"
+IluReorderSpheres="0"
+ImbalanceTol="1.1"
+InitialTimeStepInDays="1"
+InitialTimeStepSize="86400"
+InjMultDampMult="0.9"
+InjMultMinDampFactor="0.05"
+InjMultOscThreshold="0.1"
+InputSkipMode="100"
+LinearSolver="cprw"
+LinearSolverAccelerator="cpu"
+LinearSolverIgnoreConvergenceFailure="0"
+LinearSolverMaxIter="200"
+LinearSolverPrintJsonDefinition="1"
+LinearSolverReduction="0.01"
+LinearSolverRestart="40"
+LinearSolverVerbosity="0"
+LoadFile=""
+LoadStep="-1"
+LocalDomainsOrderingMeasure="maxpressure"
+LocalDomainsPartitionWellNeighborLevels="1"
+LocalDomainsPartitioningImbalance="1.03"
+LocalDomainsPartitioningMethod="zoltan"
+LocalSolveApproach="gauss-seidel"
+LocalToleranceScalingCnv="0.1"
+LocalToleranceScalingMb="1"
+LocalWellSolveControlSwitching="1"
+MatrixAddWellContributions="0"
+MaxInnerIterMsWells="100"
+MaxInnerIterWells="50"
+MaxLocalSolveIterations="20"
+MaxNewtonIterationsWithInnerWellIterations="8"
+MaxPressureChangeMsWells="1e+06"
+MaxResidualAllowed="1e+07"
+MaxSinglePrecisionDays="20"
+MaxTemperatureChange="5"
+MaxTimeStepDivisions="10"
+MaxTimeStepSize="inf"
+MaxWellStatusSwitchForWells="99"
+MaxWellStatusSwitchInInnerIterWells="99"
+MaxWelleqIter="30"
+MaximumNumberOfGroupSwitches="3"
+MaximumNumberOfWellSwitches="3"
+MaximumWaterSaturation="1"
+MetisParams="default"
+MiluVariant="ilu"
+MinStrictCnvIter="-1"
+MinStrictMbIter="-1"
+MinTimeStepBasedOnNewtonIterations="0"
+MinTimeStepBeforeShuttingProblematicWellsInDays="0.01"
+MinTimeStepSize="0"
+NetworkMaxOuterIterations="10"
+NetworkMaxPressureUpdateInBars="5"
+NetworkMaxStrictOuterIterations="10"
+NetworkMaxSubIterations="20"
+NetworkPressureUpdateDampingFactor="0.1"
+NewtonMaxError="1e+100"
+NewtonMaxIterations="20"
+NewtonMaxRelax="0.5"
+NewtonMinIterations="2"
+NewtonRelaxationType="dampen"
+NewtonTargetIterations="10"
+NewtonTolerance="0.01"
+NewtonVerbose="1"
+NewtonWriteConvergence="0"
+NlddLocalLinearSolver="ilu0"
+NlddLocalLinearSolverMaxIter="200"
+NlddLocalLinearSolverReduction="0.01"
+NlddNumInitialNewtonIter="1"
+NlddRelativeMobilityChangeTol="0.1"
+NonlinearSolver="newton"
+NumLocalDomains="0"
+NumOverlap="1"
+NumPressurePointsEquil="2000"
+NumSatfuncConsistencySamplePoints="5"
+NupcolGroupRateTolerance="0.001"
+OpenclIluParallel="1"
+OpenclPlatformId="0"
+OutputExtraConvergenceInfo="none"
+OutputInterval="1"
+OutputMode="all"
+OwnerCellsFirst="1"
+ParameterFile=""
+ParsingStrictness="normal"
+PartitionMethod="zoltanwell"
+PreSolveNetwork="1"
+PredeterminedTimeStepsFile=""
+PressureMax="1e+99"
+PressureMin="-1e+99"
+PressureScale="1"
+PriVarOscilationThreshold="1e-05"
+PrintParameters="2"
+ProjectSaturations="0"
+RegularizationFactorWells="100"
+RelaxedLinearSolverReduction="0.01"
+RelaxedMaxPvFraction="0.03"
+RelaxedPressureTolMsw="10000"
+RelaxedWellFlowTol="0.001"
+RestartTime="-1e+35"
+RestartWritingInterval="16777215"
+SaveFile=""
+SaveStep=""
+ScaleLinearSystem="0"
+SchedRestart="0"
+SerialPartitioning="0"
+ShutUnsolvableWells="1"
+Slave="0"
+SolveWelleqInitially="1"
+SolverContinueOnConvergenceFailure="0"
+SolverGrowthFactor="2"
+SolverMaxGrowth="3"
+SolverMaxRestarts="10"
+SolverMaxTimeStepInDays="365"
+SolverMinTimeStep="1e-12"
+SolverRestartFactor="0.33"
+SolverVerbosity="1"
+StrictInnerIterWells="40"
+StrictOuterIterWells="6"
+TemperatureMax="1e+09"
+TemperatureMin="0"
+ThreadsPerProcess="2"
+TimeStepAfterEventInDays="-1"
+TimeStepControl="pid+newtoniteration"
+TimeStepControlDecayDampingFactor="1"
+TimeStepControlDecayRate="0.75"
+TimeStepControlFileName="timesteps"
+TimeStepControlGrowthDampingFactor="3.2"
+TimeStepControlGrowthRate="1.25"
+TimeStepControlMaxReductionTimeStep="0.1"
+TimeStepControlParameters="0.125;0.25;0.125;0.75;0.25"
+TimeStepControlRejectCompletedStep="0"
+TimeStepControlSafetyFactor="0.8"
+TimeStepControlTargetIterations="30"
+TimeStepControlTargetNewtonIterations="8"
+TimeStepControlTolerance="0.1"
+TimeStepControlToleranceTestVersion="standard"
+TimeStepVerbosity="1"
+ToleranceCnv="0.01"
+ToleranceCnvEnergy="0.01"
+ToleranceCnvEnergyRelaxed="1"
+ToleranceCnvRelaxed="1"
+ToleranceEnergyBalance="1e-07"
+ToleranceEnergyBalanceRelaxed="1e-06"
+ToleranceMb="1e-07"
+ToleranceMbRelaxed="1e-06"
+TolerancePressureMsWells="1000"
+ToleranceWellControl="1e-07"
+ToleranceWells="0.0001"
+UpdateEquationsScaling="0"
+UseAverageDensityMsWells="0"
+UseGmres="0"
+UseHyNe="0"
+UseImplicitIpr="1"
+UseMultisegmentWell="1"
+UseUpdateStabilization="1"
+VerifyGpuAwareMpi="0"
+VtkWriteAverageMolarMasses="0"
+VtkWriteDensities="1"
+VtkWriteDiffusionCoefficients="0"
+VtkWriteDofIndex="0"
+VtkWriteEffectiveDiffusionCoefficients="0"
+VtkWriteExtrusionFactor="0"
+VtkWriteFilterVelocities="0"
+VtkWriteFugacities="0"
+VtkWriteFugacityCoeffs="0"
+VtkWriteGasDissolutionFactor="0"
+VtkWriteGasFormationVolumeFactor="0"
+VtkWriteGasSaturationPressure="0"
+VtkWriteIntrinsicPermeabilities="0"
+VtkWriteMassFractions="0"
+VtkWriteMobilities="0"
+VtkWriteMolarities="0"
+VtkWriteMoleFractions="1"
+VtkWriteOilFormationVolumeFactor="0"
+VtkWriteOilSaturationPressure="0"
+VtkWriteOilVaporizationFactor="0"
+VtkWritePorosity="1"
+VtkWritePotentialGradients="0"
+VtkWritePressures="1"
+VtkWritePrimaryVars="0"
+VtkWritePrimaryVarsMeaning="0"
+VtkWriteProcessRank="0"
+VtkWriteRelativePermeabilities="1"
+VtkWriteSaturatedGasOilVaporizationFactor="0"
+VtkWriteSaturatedOilGasDissolutionFactor="0"
+VtkWriteSaturationRatios="0"
+VtkWriteSaturations="1"
+VtkWriteTemperature="1"
+VtkWriteTortuosities="0"
+VtkWriteTotalMassFractions="0"
+VtkWriteTotalMoleFractions="0"
+VtkWriteTracerConcentration="0"
+VtkWriteViscosities="0"
+VtkWriteWaterFormationVolumeFactor="0"
+WaterOnlyThreshold="1"
+WellGroupConstraintsMaxIterations="1"
+ZoltanImbalanceTol="1.1"
+ZoltanParams="graph"
+ZoltanPhgEdgeSizeThreshold="0.35"
+
+Reading deck file 'SPE5_PERM_0.5X_12000.DATA'
+    0 Reading RUNSPEC  in SPE5_PERM_0.5X_12000.DATA line 4
+    1 Reading UNIFIN   in SPE5_PERM_0.5X_12000.DATA line 5
+    2 Reading UNIFOUT  in SPE5_PERM_0.5X_12000.DATA line 6
+    3 Reading TITLE    in SPE5_PERM_0.5X_12000.DATA line 8
+    4 Reading DIMENS   in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 4
+    5 Reading EQLDIMS  in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 7
+    6 Reading TABDIMS  in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 10
+    7 Reading OIL      in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 13
+    8 Reading GAS      in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 14
+    9 Reading WATER    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 15
+   10 Reading DISGAS   in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 16
+   11 Reading SOLVENT  in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 17
+   12 Reading MISCIBLE in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 19
+   13 Reading FIELD    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 22
+   14 Reading START    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 24
+   15 Reading WELLDIMS in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 27
+   16 Reading UNIFOUT  in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 30
+   17 Reading GRID     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 32
+   18 Reading NOECHO   in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 33
+   19 Reading INIT     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 35
+   20 Reading DX       in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 37
+   21 Reading DY       in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 39
+   22 Reading DZ       in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 41
+   23 Reading TOPS     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 44
+   24 Reading PORO     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 47
+   25 Reading PERMX    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 51
+   26 Reading PERMY    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 53
+   27 Reading PERMZ    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 55
+   28 Reading ECHO     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 58
+   29 Reading PROPS    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 59
+   30 Reading PVTW     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 63
+   31 Reading ROCK     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 73
+   32 Reading SWFN     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 79
+   33 Reading SGFN     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 96
+   34 Reading SOF3     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 114
+   35 Reading SOF2     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 135
+   36 Reading SSFN     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 150
+   37 Reading MISC     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 158
+   38 Reading PMISC    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 167
+   39 Reading DENSITY  in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 173
+   40 Reading SDENSITY in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 180
+   41 Reading TLMIXPAR in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 185
+   42 Reading PVDG     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 198
+   43 Reading PVDS     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 219
+   44 Reading PVTO     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 240
+   45 Reading SOLUTION in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 268
+   46 Reading EQUIL    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 270
+   47 Reading RSVD     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 273
+   48 Reading SUMMARY  in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 277
+   49 Reading WBHP     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 279
+   50 Reading WGIR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 284
+   51 Reading WWIR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 289
+   52 Reading WOIR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 294
+   53 Reading FOPR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 299
+   54 Reading FGPR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 300
+   55 Reading FWPR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 301
+   56 Reading FWIR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 302
+   57 Reading FGIR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 303
+   58 Reading FWCT     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 304
+   59 Reading FGOR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 305
+   60 Reading SCHEDULE in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 308
+   61 Reading RPTRST   in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 310
+   62 Reading WELSPECS in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 313
+   63 Reading COMPDAT  in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 319
+   64 Reading WCONPROD in SPE5_PERM_0.5X_12000.DATA line 14
+   65 Reading WCONINJE in SPE5_PERM_0.5X_12000.DATA line 18
+   66 Reading WSOLVENT in SPE5_PERM_0.5X_12000.DATA line 22
+   67 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 26
+   68 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 31
+   69 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 36
+   70 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 40
+   71 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 44
+   72 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 48
+   73 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 52
+   74 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 56
+   75 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 60
+   76 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 64
+   77 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 68
+   78 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 72
+   79 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 76
+   80 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 80
+   81 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 84
+   82 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 88
+   83 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 92
+   84 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 96
+   85 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 100
+   86 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 104
+   87 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 108
+   88 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 112
+   89 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 116
+   90 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 120
+   91 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 124
+   92 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 128
+   93 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 132
+   94 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 136
+   95 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 140
+   96 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 144
+   97 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 148
+   98 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 152
+   99 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 156
+  100 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 160
+  101 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 164
+  102 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 168
+  103 Reading WELOPEN  in SPE5_PERM_0.5X_12000.DATA line 172
+  104 Reading TSTEP    in SPE5_PERM_0.5X_12000.DATA line 176
+
+Warning: Unsupported keywords or keyword items:
+
+  NOECHO: keyword not supported
+  In file: /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE, line 33
+
+  ECHO: keyword not supported
+  In file: /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE, line 58
+
+Creating grid from keywords DX, DY, DZ and TOPS
+4 fluid phases are active
+
+Processing dynamic information from
+/home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 308
+Initializing report step 0/240 at 1987-01-01 0 DAYS line 308
+Processing keyword RPTRST at line 310
+Processing keyword WELSPECS at line 313
+Processing keyword COMPDAT at line 319
+Reading from: SPE5_PERM_0.5X_12000.DATA line 14
+Processing keyword WCONPROD at line 14
+Processing keyword WCONINJE at line 18
+Processing keyword WSOLVENT at line 22
+Processing keyword WELOPEN at line 26
+Complete report step 1 (31 DAYS) at 1987-02-01 (0 DAYS)
+
+Initializing report step 2/240 at 1987-02-01 (0 DAYS) line 31
+Complete report step 2 (28 DAYS) at 1987-03-01 (31 DAYS)
+
+Initializing report step 3/240 at 1987-03-01 (31 DAYS) line 31
+Complete report step 3 (31 DAYS) at 1987-04-01 (59 DAYS)
+
+Initializing report step 4/240 at 1987-04-01 (59 DAYS) line 31
+Complete report step 4 (30 DAYS) at 1987-05-01 (90 DAYS)
+
+Initializing report step 5/240 at 1987-05-01 (90 DAYS) line 31
+Complete report step 5 (31 DAYS) at 1987-06-01 (120 DAYS)
+Report limit reached, see PRT-file for remaining Schedule initialization.
+
+Initializing report step 6/240 at 1987-06-01 (120 DAYS) line 31
+Complete report step 6 (30 DAYS) at 1987-07-01 (151 DAYS)
+
+Initializing report step 7/240 at 1987-07-01 (151 DAYS) line 31
+Complete report step 7 (31 DAYS) at 1987-08-01 (181 DAYS)
+
+Initializing report step 8/240 at 1987-08-01 (181 DAYS) line 31
+Complete report step 8 (31 DAYS) at 1987-09-01 (212 DAYS)
+
+Initializing report step 9/240 at 1987-09-01 (212 DAYS) line 31
+Complete report step 9 (30 DAYS) at 1987-10-01 (243 DAYS)
+
+Initializing report step 10/240 at 1987-10-01 (243 DAYS) line 31
+Complete report step 10 (31 DAYS) at 1987-11-01 (273 DAYS)
+
+Initializing report step 11/240 at 1987-11-01 (273 DAYS) line 31
+Complete report step 11 (30 DAYS) at 1987-12-01 (304 DAYS)
+
+Initializing report step 12/240 at 1987-12-01 (304 DAYS) line 31
+Complete report step 12 (31 DAYS) at 1988-01-01 (334 DAYS)
+
+Initializing report step 13/240 at 1988-01-01 (334 DAYS) line 31
+Complete report step 13 (31 DAYS) at 1988-02-01 (365 DAYS)
+
+Initializing report step 14/240 at 1988-02-01 (365 DAYS) line 31
+Complete report step 14 (28 DAYS) at 1988-02-29 (396 DAYS)
+
+Initializing report step 15/240 at 1988-02-29 (396 DAYS) line 31
+Complete report step 15 (31 DAYS) at 1988-03-31 (424 DAYS)
+
+Initializing report step 16/240 at 1988-03-31 (424 DAYS) line 31
+Complete report step 16 (30 DAYS) at 1988-04-30 (455 DAYS)
+
+Initializing report step 17/240 at 1988-04-30 (455 DAYS) line 31
+Complete report step 17 (31 DAYS) at 1988-05-31 (485 DAYS)
+
+Initializing report step 18/240 at 1988-05-31 (485 DAYS) line 31
+Complete report step 18 (30 DAYS) at 1988-06-30 (516 DAYS)
+
+Initializing report step 19/240 at 1988-06-30 (516 DAYS) line 31
+Complete report step 19 (31 DAYS) at 1988-07-31 (546 DAYS)
+
+Initializing report step 20/240 at 1988-07-31 (546 DAYS) line 31
+Complete report step 20 (31 DAYS) at 1988-08-31 (577 DAYS)
+
+Initializing report step 21/240 at 1988-08-31 (577 DAYS) line 31
+Complete report step 21 (30 DAYS) at 1988-09-30 (608 DAYS)
+
+Initializing report step 22/240 at 1988-09-30 (608 DAYS) line 31
+Complete report step 22 (31 DAYS) at 1988-10-31 (638 DAYS)
+
+Initializing report step 23/240 at 1988-10-31 (638 DAYS) line 31
+Complete report step 23 (30 DAYS) at 1988-11-30 (669 DAYS)
+
+Initializing report step 24/240 at 1988-11-30 (669 DAYS) line 31
+Complete report step 24 (31 DAYS) at 1988-12-31 (699 DAYS)
+
+Initializing report step 25/240 at 1988-12-31 (699 DAYS) line 31
+Processing keyword WELOPEN at line 36
+Complete report step 25 (31 DAYS) at 1989-01-31 (730 DAYS)
+
+Initializing report step 26/240 at 1989-01-31 (730 DAYS) line 40
+Complete report step 26 (28 DAYS) at 1989-02-28 (761 DAYS)
+
+Initializing report step 27/240 at 1989-02-28 (761 DAYS) line 40
+Complete report step 27 (31 DAYS) at 1989-03-31 (789 DAYS)
+
+Initializing report step 28/240 at 1989-03-31 (789 DAYS) line 40
+Complete report step 28 (30 DAYS) at 1989-04-30 (820 DAYS)
+
+Initializing report step 29/240 at 1989-04-30 (820 DAYS) line 40
+Complete report step 29 (31 DAYS) at 1989-05-31 (850 DAYS)
+
+Initializing report step 30/240 at 1989-05-31 (850 DAYS) line 40
+Complete report step 30 (30 DAYS) at 1989-06-30 (881 DAYS)
+
+Initializing report step 31/240 at 1989-06-30 (881 DAYS) line 40
+Complete report step 31 (31 DAYS) at 1989-07-31 (911 DAYS)
+
+Initializing report step 32/240 at 1989-07-31 (911 DAYS) line 40
+Complete report step 32 (31 DAYS) at 1989-08-31 (942 DAYS)
+
+Initializing report step 33/240 at 1989-08-31 (942 DAYS) line 40
+Complete report step 33 (30 DAYS) at 1989-09-30 (973 DAYS)
+
+Initializing report step 34/240 at 1989-09-30 (973 DAYS) line 40
+Complete report step 34 (31 DAYS) at 1989-10-31 (1003 DAYS)
+
+Initializing report step 35/240 at 1989-10-31 (1003 DAYS) line 40
+Complete report step 35 (30 DAYS) at 1989-11-30 (1034 DAYS)
+
+Initializing report step 36/240 at 1989-11-30 (1034 DAYS) line 40
+Complete report step 36 (31 DAYS) at 1989-12-31 (1064 DAYS)
+
+Initializing report step 37/240 at 1989-12-31 (1064 DAYS) line 40
+Processing keyword WELOPEN at line 44
+Complete report step 37 (31 DAYS) at 1990-01-31 (1095 DAYS)
+
+Initializing report step 38/240 at 1990-01-31 (1095 DAYS) line 48
+Complete report step 38 (28 DAYS) at 1990-02-28 (1126 DAYS)
+
+Initializing report step 39/240 at 1990-02-28 (1126 DAYS) line 48
+Complete report step 39 (31 DAYS) at 1990-03-31 (1154 DAYS)
+
+Initializing report step 40/240 at 1990-03-31 (1154 DAYS) line 48
+Complete report step 40 (30 DAYS) at 1990-04-30 (1185 DAYS)
+
+Initializing report step 41/240 at 1990-04-30 (1185 DAYS) line 48
+Complete report step 41 (31 DAYS) at 1990-05-31 (1215 DAYS)
+
+Initializing report step 42/240 at 1990-05-31 (1215 DAYS) line 48
+Complete report step 42 (30 DAYS) at 1990-06-30 (1246 DAYS)
+
+Initializing report step 43/240 at 1990-06-30 (1246 DAYS) line 48
+Complete report step 43 (31 DAYS) at 1990-07-31 (1276 DAYS)
+
+Initializing report step 44/240 at 1990-07-31 (1276 DAYS) line 48
+Complete report step 44 (31 DAYS) at 1990-08-31 (1307 DAYS)
+
+Initializing report step 45/240 at 1990-08-31 (1307 DAYS) line 48
+Complete report step 45 (30 DAYS) at 1990-09-30 (1338 DAYS)
+
+Initializing report step 46/240 at 1990-09-30 (1338 DAYS) line 48
+Complete report step 46 (31 DAYS) at 1990-10-31 (1368 DAYS)
+
+Initializing report step 47/240 at 1990-10-31 (1368 DAYS) line 48
+Complete report step 47 (30 DAYS) at 1990-11-30 (1399 DAYS)
+
+Initializing report step 48/240 at 1990-11-30 (1399 DAYS) line 48
+Complete report step 48 (31 DAYS) at 1990-12-31 (1429 DAYS)
+
+Initializing report step 49/240 at 1990-12-31 (1429 DAYS) line 48
+Processing keyword WELOPEN at line 52
+Complete report step 49 (31 DAYS) at 1991-01-31 (1460 DAYS)
+
+Initializing report step 50/240 at 1991-01-31 (1460 DAYS) line 56
+Complete report step 50 (28 DAYS) at 1991-02-28 (1491 DAYS)
+
+Initializing report step 51/240 at 1991-02-28 (1491 DAYS) line 56
+Complete report step 51 (31 DAYS) at 1991-03-31 (1519 DAYS)
+
+Initializing report step 52/240 at 1991-03-31 (1519 DAYS) line 56
+Complete report step 52 (30 DAYS) at 1991-04-30 (1550 DAYS)
+
+Initializing report step 53/240 at 1991-04-30 (1550 DAYS) line 56
+Complete report step 53 (31 DAYS) at 1991-05-31 (1580 DAYS)
+
+Initializing report step 54/240 at 1991-05-31 (1580 DAYS) line 56
+Complete report step 54 (30 DAYS) at 1991-06-30 (1611 DAYS)
+
+Initializing report step 55/240 at 1991-06-30 (1611 DAYS) line 56
+Complete report step 55 (31 DAYS) at 1991-07-31 (1641 DAYS)
+
+Initializing report step 56/240 at 1991-07-31 (1641 DAYS) line 56
+Complete report step 56 (31 DAYS) at 1991-08-31 (1672 DAYS)
+
+Initializing report step 57/240 at 1991-08-31 (1672 DAYS) line 56
+Complete report step 57 (30 DAYS) at 1991-09-30 (1703 DAYS)
+
+Initializing report step 58/240 at 1991-09-30 (1703 DAYS) line 56
+Complete report step 58 (31 DAYS) at 1991-10-31 (1733 DAYS)
+
+Initializing report step 59/240 at 1991-10-31 (1733 DAYS) line 56
+Complete report step 59 (30 DAYS) at 1991-11-30 (1764 DAYS)
+
+Initializing report step 60/240 at 1991-11-30 (1764 DAYS) line 56
+Complete report step 60 (31 DAYS) at 1991-12-31 (1794 DAYS)
+
+Initializing report step 61/240 at 1991-12-31 (1794 DAYS) line 56
+Processing keyword WELOPEN at line 60
+Complete report step 61 (31 DAYS) at 1992-01-31 (1825 DAYS)
+
+Initializing report step 62/240 at 1992-01-31 (1825 DAYS) line 64
+Complete report step 62 (28 DAYS) at 1992-02-28 (1856 DAYS)
+
+Initializing report step 63/240 at 1992-02-28 (1856 DAYS) line 64
+Complete report step 63 (31 DAYS) at 1992-03-30 (1884 DAYS)
+
+Initializing report step 64/240 at 1992-03-30 (1884 DAYS) line 64
+Complete report step 64 (30 DAYS) at 1992-04-29 (1915 DAYS)
+
+Initializing report step 65/240 at 1992-04-29 (1915 DAYS) line 64
+Complete report step 65 (31 DAYS) at 1992-05-30 (1945 DAYS)
+
+Initializing report step 66/240 at 1992-05-30 (1945 DAYS) line 64
+Complete report step 66 (30 DAYS) at 1992-06-29 (1976 DAYS)
+
+Initializing report step 67/240 at 1992-06-29 (1976 DAYS) line 64
+Complete report step 67 (31 DAYS) at 1992-07-30 (2006 DAYS)
+
+Initializing report step 68/240 at 1992-07-30 (2006 DAYS) line 64
+Complete report step 68 (31 DAYS) at 1992-08-30 (2037 DAYS)
+
+Initializing report step 69/240 at 1992-08-30 (2037 DAYS) line 64
+Complete report step 69 (30 DAYS) at 1992-09-29 (2068 DAYS)
+
+Initializing report step 70/240 at 1992-09-29 (2068 DAYS) line 64
+Complete report step 70 (31 DAYS) at 1992-10-30 (2098 DAYS)
+
+Initializing report step 71/240 at 1992-10-30 (2098 DAYS) line 64
+Complete report step 71 (30 DAYS) at 1992-11-29 (2129 DAYS)
+
+Initializing report step 72/240 at 1992-11-29 (2129 DAYS) line 64
+Complete report step 72 (31 DAYS) at 1992-12-30 (2159 DAYS)
+
+Initializing report step 73/240 at 1992-12-30 (2159 DAYS) line 64
+Processing keyword WELOPEN at line 68
+Complete report step 73 (31 DAYS) at 1993-01-30 (2190 DAYS)
+
+Initializing report step 74/240 at 1993-01-30 (2190 DAYS) line 72
+Complete report step 74 (28 DAYS) at 1993-02-27 (2221 DAYS)
+
+Initializing report step 75/240 at 1993-02-27 (2221 DAYS) line 72
+Complete report step 75 (31 DAYS) at 1993-03-30 (2249 DAYS)
+
+Initializing report step 76/240 at 1993-03-30 (2249 DAYS) line 72
+Complete report step 76 (30 DAYS) at 1993-04-29 (2280 DAYS)
+
+Initializing report step 77/240 at 1993-04-29 (2280 DAYS) line 72
+Complete report step 77 (31 DAYS) at 1993-05-30 (2310 DAYS)
+
+Initializing report step 78/240 at 1993-05-30 (2310 DAYS) line 72
+Complete report step 78 (30 DAYS) at 1993-06-29 (2341 DAYS)
+
+Initializing report step 79/240 at 1993-06-29 (2341 DAYS) line 72
+Complete report step 79 (31 DAYS) at 1993-07-30 (2371 DAYS)
+
+Initializing report step 80/240 at 1993-07-30 (2371 DAYS) line 72
+Complete report step 80 (31 DAYS) at 1993-08-30 (2402 DAYS)
+
+Initializing report step 81/240 at 1993-08-30 (2402 DAYS) line 72
+Complete report step 81 (30 DAYS) at 1993-09-29 (2433 DAYS)
+
+Initializing report step 82/240 at 1993-09-29 (2433 DAYS) line 72
+Complete report step 82 (31 DAYS) at 1993-10-30 (2463 DAYS)
+
+Initializing report step 83/240 at 1993-10-30 (2463 DAYS) line 72
+Complete report step 83 (30 DAYS) at 1993-11-29 (2494 DAYS)
+
+Initializing report step 84/240 at 1993-11-29 (2494 DAYS) line 72
+Complete report step 84 (31 DAYS) at 1993-12-30 (2524 DAYS)
+
+Initializing report step 85/240 at 1993-12-30 (2524 DAYS) line 72
+Processing keyword WELOPEN at line 76
+Complete report step 85 (31 DAYS) at 1994-01-30 (2555 DAYS)
+
+Initializing report step 86/240 at 1994-01-30 (2555 DAYS) line 80
+Complete report step 86 (28 DAYS) at 1994-02-27 (2586 DAYS)
+
+Initializing report step 87/240 at 1994-02-27 (2586 DAYS) line 80
+Complete report step 87 (31 DAYS) at 1994-03-30 (2614 DAYS)
+
+Initializing report step 88/240 at 1994-03-30 (2614 DAYS) line 80
+Complete report step 88 (30 DAYS) at 1994-04-29 (2645 DAYS)
+
+Initializing report step 89/240 at 1994-04-29 (2645 DAYS) line 80
+Complete report step 89 (31 DAYS) at 1994-05-30 (2675 DAYS)
+
+Initializing report step 90/240 at 1994-05-30 (2675 DAYS) line 80
+Complete report step 90 (30 DAYS) at 1994-06-29 (2706 DAYS)
+
+Initializing report step 91/240 at 1994-06-29 (2706 DAYS) line 80
+Complete report step 91 (31 DAYS) at 1994-07-30 (2736 DAYS)
+
+Initializing report step 92/240 at 1994-07-30 (2736 DAYS) line 80
+Complete report step 92 (31 DAYS) at 1994-08-30 (2767 DAYS)
+
+Initializing report step 93/240 at 1994-08-30 (2767 DAYS) line 80
+Complete report step 93 (30 DAYS) at 1994-09-29 (2798 DAYS)
+
+Initializing report step 94/240 at 1994-09-29 (2798 DAYS) line 80
+Complete report step 94 (31 DAYS) at 1994-10-30 (2828 DAYS)
+
+Initializing report step 95/240 at 1994-10-30 (2828 DAYS) line 80
+Complete report step 95 (30 DAYS) at 1994-11-29 (2859 DAYS)
+
+Initializing report step 96/240 at 1994-11-29 (2859 DAYS) line 80
+Complete report step 96 (31 DAYS) at 1994-12-30 (2889 DAYS)
+
+Initializing report step 97/240 at 1994-12-30 (2889 DAYS) line 80
+Processing keyword WELOPEN at line 84
+Complete report step 97 (31 DAYS) at 1995-01-30 (2920 DAYS)
+
+Initializing report step 98/240 at 1995-01-30 (2920 DAYS) line 88
+Complete report step 98 (28 DAYS) at 1995-02-27 (2951 DAYS)
+
+Initializing report step 99/240 at 1995-02-27 (2951 DAYS) line 88
+Complete report step 99 (31 DAYS) at 1995-03-30 (2979 DAYS)
+
+Initializing report step 100/240 at 1995-03-30 (2979 DAYS) line 88
+Complete report step 100 (30 DAYS) at 1995-04-29 (3010 DAYS)
+
+Initializing report step 101/240 at 1995-04-29 (3010 DAYS) line 88
+Complete report step 101 (31 DAYS) at 1995-05-30 (3040 DAYS)
+
+Initializing report step 102/240 at 1995-05-30 (3040 DAYS) line 88
+Complete report step 102 (30 DAYS) at 1995-06-29 (3071 DAYS)
+
+Initializing report step 103/240 at 1995-06-29 (3071 DAYS) line 88
+Complete report step 103 (31 DAYS) at 1995-07-30 (3101 DAYS)
+
+Initializing report step 104/240 at 1995-07-30 (3101 DAYS) line 88
+Complete report step 104 (31 DAYS) at 1995-08-30 (3132 DAYS)
+
+Initializing report step 105/240 at 1995-08-30 (3132 DAYS) line 88
+Complete report step 105 (30 DAYS) at 1995-09-29 (3163 DAYS)
+
+Initializing report step 106/240 at 1995-09-29 (3163 DAYS) line 88
+Complete report step 106 (31 DAYS) at 1995-10-30 (3193 DAYS)
+
+Initializing report step 107/240 at 1995-10-30 (3193 DAYS) line 88
+Complete report step 107 (30 DAYS) at 1995-11-29 (3224 DAYS)
+
+Initializing report step 108/240 at 1995-11-29 (3224 DAYS) line 88
+Complete report step 108 (31 DAYS) at 1995-12-30 (3254 DAYS)
+
+Initializing report step 109/240 at 1995-12-30 (3254 DAYS) line 88
+Processing keyword WELOPEN at line 92
+Complete report step 109 (31 DAYS) at 1996-01-30 (3285 DAYS)
+
+Initializing report step 110/240 at 1996-01-30 (3285 DAYS) line 96
+Complete report step 110 (28 DAYS) at 1996-02-27 (3316 DAYS)
+
+Initializing report step 111/240 at 1996-02-27 (3316 DAYS) line 96
+Complete report step 111 (31 DAYS) at 1996-03-29 (3344 DAYS)
+
+Initializing report step 112/240 at 1996-03-29 (3344 DAYS) line 96
+Complete report step 112 (30 DAYS) at 1996-04-28 (3375 DAYS)
+
+Initializing report step 113/240 at 1996-04-28 (3375 DAYS) line 96
+Complete report step 113 (31 DAYS) at 1996-05-29 (3405 DAYS)
+
+Initializing report step 114/240 at 1996-05-29 (3405 DAYS) line 96
+Complete report step 114 (30 DAYS) at 1996-06-28 (3436 DAYS)
+
+Initializing report step 115/240 at 1996-06-28 (3436 DAYS) line 96
+Complete report step 115 (31 DAYS) at 1996-07-29 (3466 DAYS)
+
+Initializing report step 116/240 at 1996-07-29 (3466 DAYS) line 96
+Complete report step 116 (31 DAYS) at 1996-08-29 (3497 DAYS)
+
+Initializing report step 117/240 at 1996-08-29 (3497 DAYS) line 96
+Complete report step 117 (30 DAYS) at 1996-09-28 (3528 DAYS)
+
+Initializing report step 118/240 at 1996-09-28 (3528 DAYS) line 96
+Complete report step 118 (31 DAYS) at 1996-10-29 (3558 DAYS)
+
+Initializing report step 119/240 at 1996-10-29 (3558 DAYS) line 96
+Complete report step 119 (30 DAYS) at 1996-11-28 (3589 DAYS)
+
+Initializing report step 120/240 at 1996-11-28 (3589 DAYS) line 96
+Complete report step 120 (31 DAYS) at 1996-12-29 (3619 DAYS)
+
+Initializing report step 121/240 at 1996-12-29 (3619 DAYS) line 96
+Processing keyword WELOPEN at line 100
+Complete report step 121 (31 DAYS) at 1997-01-29 (3650 DAYS)
+
+Initializing report step 122/240 at 1997-01-29 (3650 DAYS) line 104
+Complete report step 122 (28 DAYS) at 1997-02-26 (3681 DAYS)
+
+Initializing report step 123/240 at 1997-02-26 (3681 DAYS) line 104
+Complete report step 123 (31 DAYS) at 1997-03-29 (3709 DAYS)
+
+Initializing report step 124/240 at 1997-03-29 (3709 DAYS) line 104
+Complete report step 124 (30 DAYS) at 1997-04-28 (3740 DAYS)
+
+Initializing report step 125/240 at 1997-04-28 (3740 DAYS) line 104
+Complete report step 125 (31 DAYS) at 1997-05-29 (3770 DAYS)
+
+Initializing report step 126/240 at 1997-05-29 (3770 DAYS) line 104
+Complete report step 126 (30 DAYS) at 1997-06-28 (3801 DAYS)
+
+Initializing report step 127/240 at 1997-06-28 (3801 DAYS) line 104
+Complete report step 127 (31 DAYS) at 1997-07-29 (3831 DAYS)
+
+Initializing report step 128/240 at 1997-07-29 (3831 DAYS) line 104
+Complete report step 128 (31 DAYS) at 1997-08-29 (3862 DAYS)
+
+Initializing report step 129/240 at 1997-08-29 (3862 DAYS) line 104
+Complete report step 129 (30 DAYS) at 1997-09-28 (3893 DAYS)
+
+Initializing report step 130/240 at 1997-09-28 (3893 DAYS) line 104
+Complete report step 130 (31 DAYS) at 1997-10-29 (3923 DAYS)
+
+Initializing report step 131/240 at 1997-10-29 (3923 DAYS) line 104
+Complete report step 131 (30 DAYS) at 1997-11-28 (3954 DAYS)
+
+Initializing report step 132/240 at 1997-11-28 (3954 DAYS) line 104
+Complete report step 132 (31 DAYS) at 1997-12-29 (3984 DAYS)
+
+Initializing report step 133/240 at 1997-12-29 (3984 DAYS) line 104
+Processing keyword WELOPEN at line 108
+Complete report step 133 (31 DAYS) at 1998-01-29 (4015 DAYS)
+
+Initializing report step 134/240 at 1998-01-29 (4015 DAYS) line 112
+Complete report step 134 (28 DAYS) at 1998-02-26 (4046 DAYS)
+
+Initializing report step 135/240 at 1998-02-26 (4046 DAYS) line 112
+Complete report step 135 (31 DAYS) at 1998-03-29 (4074 DAYS)
+
+Initializing report step 136/240 at 1998-03-29 (4074 DAYS) line 112
+Complete report step 136 (30 DAYS) at 1998-04-28 (4105 DAYS)
+
+Initializing report step 137/240 at 1998-04-28 (4105 DAYS) line 112
+Complete report step 137 (31 DAYS) at 1998-05-29 (4135 DAYS)
+
+Initializing report step 138/240 at 1998-05-29 (4135 DAYS) line 112
+Complete report step 138 (30 DAYS) at 1998-06-28 (4166 DAYS)
+
+Initializing report step 139/240 at 1998-06-28 (4166 DAYS) line 112
+Complete report step 139 (31 DAYS) at 1998-07-29 (4196 DAYS)
+
+Initializing report step 140/240 at 1998-07-29 (4196 DAYS) line 112
+Complete report step 140 (31 DAYS) at 1998-08-29 (4227 DAYS)
+
+Initializing report step 141/240 at 1998-08-29 (4227 DAYS) line 112
+Complete report step 141 (30 DAYS) at 1998-09-28 (4258 DAYS)
+
+Initializing report step 142/240 at 1998-09-28 (4258 DAYS) line 112
+Complete report step 142 (31 DAYS) at 1998-10-29 (4288 DAYS)
+
+Initializing report step 143/240 at 1998-10-29 (4288 DAYS) line 112
+Complete report step 143 (30 DAYS) at 1998-11-28 (4319 DAYS)
+
+Initializing report step 144/240 at 1998-11-28 (4319 DAYS) line 112
+Complete report step 144 (31 DAYS) at 1998-12-29 (4349 DAYS)
+
+Initializing report step 145/240 at 1998-12-29 (4349 DAYS) line 112
+Processing keyword WELOPEN at line 116
+Complete report step 145 (31 DAYS) at 1999-01-29 (4380 DAYS)
+
+Initializing report step 146/240 at 1999-01-29 (4380 DAYS) line 120
+Complete report step 146 (28 DAYS) at 1999-02-26 (4411 DAYS)
+
+Initializing report step 147/240 at 1999-02-26 (4411 DAYS) line 120
+Complete report step 147 (31 DAYS) at 1999-03-29 (4439 DAYS)
+
+Initializing report step 148/240 at 1999-03-29 (4439 DAYS) line 120
+Complete report step 148 (30 DAYS) at 1999-04-28 (4470 DAYS)
+
+Initializing report step 149/240 at 1999-04-28 (4470 DAYS) line 120
+Complete report step 149 (31 DAYS) at 1999-05-29 (4500 DAYS)
+
+Initializing report step 150/240 at 1999-05-29 (4500 DAYS) line 120
+Complete report step 150 (30 DAYS) at 1999-06-28 (4531 DAYS)
+
+Initializing report step 151/240 at 1999-06-28 (4531 DAYS) line 120
+Complete report step 151 (31 DAYS) at 1999-07-29 (4561 DAYS)
+
+Initializing report step 152/240 at 1999-07-29 (4561 DAYS) line 120
+Complete report step 152 (31 DAYS) at 1999-08-29 (4592 DAYS)
+
+Initializing report step 153/240 at 1999-08-29 (4592 DAYS) line 120
+Complete report step 153 (30 DAYS) at 1999-09-28 (4623 DAYS)
+
+Initializing report step 154/240 at 1999-09-28 (4623 DAYS) line 120
+Complete report step 154 (31 DAYS) at 1999-10-29 (4653 DAYS)
+
+Initializing report step 155/240 at 1999-10-29 (4653 DAYS) line 120
+Complete report step 155 (30 DAYS) at 1999-11-28 (4684 DAYS)
+
+Initializing report step 156/240 at 1999-11-28 (4684 DAYS) line 120
+Complete report step 156 (31 DAYS) at 1999-12-29 (4714 DAYS)
+
+Initializing report step 157/240 at 1999-12-29 (4714 DAYS) line 120
+Processing keyword WELOPEN at line 124
+Complete report step 157 (31 DAYS) at 2000-01-29 (4745 DAYS)
+
+Initializing report step 158/240 at 2000-01-29 (4745 DAYS) line 128
+Complete report step 158 (28 DAYS) at 2000-02-26 (4776 DAYS)
+
+Initializing report step 159/240 at 2000-02-26 (4776 DAYS) line 128
+Complete report step 159 (31 DAYS) at 2000-03-28 (4804 DAYS)
+
+Initializing report step 160/240 at 2000-03-28 (4804 DAYS) line 128
+Complete report step 160 (30 DAYS) at 2000-04-27 (4835 DAYS)
+
+Initializing report step 161/240 at 2000-04-27 (4835 DAYS) line 128
+Complete report step 161 (31 DAYS) at 2000-05-28 (4865 DAYS)
+
+Initializing report step 162/240 at 2000-05-28 (4865 DAYS) line 128
+Complete report step 162 (30 DAYS) at 2000-06-27 (4896 DAYS)
+
+Initializing report step 163/240 at 2000-06-27 (4896 DAYS) line 128
+Complete report step 163 (31 DAYS) at 2000-07-28 (4926 DAYS)
+
+Initializing report step 164/240 at 2000-07-28 (4926 DAYS) line 128
+Complete report step 164 (31 DAYS) at 2000-08-28 (4957 DAYS)
+
+Initializing report step 165/240 at 2000-08-28 (4957 DAYS) line 128
+Complete report step 165 (30 DAYS) at 2000-09-27 (4988 DAYS)
+
+Initializing report step 166/240 at 2000-09-27 (4988 DAYS) line 128
+Complete report step 166 (31 DAYS) at 2000-10-28 (5018 DAYS)
+
+Initializing report step 167/240 at 2000-10-28 (5018 DAYS) line 128
+Complete report step 167 (30 DAYS) at 2000-11-27 (5049 DAYS)
+
+Initializing report step 168/240 at 2000-11-27 (5049 DAYS) line 128
+Complete report step 168 (31 DAYS) at 2000-12-28 (5079 DAYS)
+
+Initializing report step 169/240 at 2000-12-28 (5079 DAYS) line 128
+Processing keyword WELOPEN at line 132
+Complete report step 169 (31 DAYS) at 2001-01-28 (5110 DAYS)
+
+Initializing report step 170/240 at 2001-01-28 (5110 DAYS) line 136
+Complete report step 170 (28 DAYS) at 2001-02-25 (5141 DAYS)
+
+Initializing report step 171/240 at 2001-02-25 (5141 DAYS) line 136
+Complete report step 171 (31 DAYS) at 2001-03-28 (5169 DAYS)
+
+Initializing report step 172/240 at 2001-03-28 (5169 DAYS) line 136
+Complete report step 172 (30 DAYS) at 2001-04-27 (5200 DAYS)
+
+Initializing report step 173/240 at 2001-04-27 (5200 DAYS) line 136
+Complete report step 173 (31 DAYS) at 2001-05-28 (5230 DAYS)
+
+Initializing report step 174/240 at 2001-05-28 (5230 DAYS) line 136
+Complete report step 174 (30 DAYS) at 2001-06-27 (5261 DAYS)
+
+Initializing report step 175/240 at 2001-06-27 (5261 DAYS) line 136
+Complete report step 175 (31 DAYS) at 2001-07-28 (5291 DAYS)
+
+Initializing report step 176/240 at 2001-07-28 (5291 DAYS) line 136
+Complete report step 176 (31 DAYS) at 2001-08-28 (5322 DAYS)
+
+Initializing report step 177/240 at 2001-08-28 (5322 DAYS) line 136
+Complete report step 177 (30 DAYS) at 2001-09-27 (5353 DAYS)
+
+Initializing report step 178/240 at 2001-09-27 (5353 DAYS) line 136
+Complete report step 178 (31 DAYS) at 2001-10-28 (5383 DAYS)
+
+Initializing report step 179/240 at 2001-10-28 (5383 DAYS) line 136
+Complete report step 179 (30 DAYS) at 2001-11-27 (5414 DAYS)
+
+Initializing report step 180/240 at 2001-11-27 (5414 DAYS) line 136
+Complete report step 180 (31 DAYS) at 2001-12-28 (5444 DAYS)
+
+Initializing report step 181/240 at 2001-12-28 (5444 DAYS) line 136
+Processing keyword WELOPEN at line 140
+Complete report step 181 (31 DAYS) at 2002-01-28 (5475 DAYS)
+
+Initializing report step 182/240 at 2002-01-28 (5475 DAYS) line 144
+Complete report step 182 (28 DAYS) at 2002-02-25 (5506 DAYS)
+
+Initializing report step 183/240 at 2002-02-25 (5506 DAYS) line 144
+Complete report step 183 (31 DAYS) at 2002-03-28 (5534 DAYS)
+
+Initializing report step 184/240 at 2002-03-28 (5534 DAYS) line 144
+Complete report step 184 (30 DAYS) at 2002-04-27 (5565 DAYS)
+
+Initializing report step 185/240 at 2002-04-27 (5565 DAYS) line 144
+Complete report step 185 (31 DAYS) at 2002-05-28 (5595 DAYS)
+
+Initializing report step 186/240 at 2002-05-28 (5595 DAYS) line 144
+Complete report step 186 (30 DAYS) at 2002-06-27 (5626 DAYS)
+
+Initializing report step 187/240 at 2002-06-27 (5626 DAYS) line 144
+Complete report step 187 (31 DAYS) at 2002-07-28 (5656 DAYS)
+
+Initializing report step 188/240 at 2002-07-28 (5656 DAYS) line 144
+Complete report step 188 (31 DAYS) at 2002-08-28 (5687 DAYS)
+
+Initializing report step 189/240 at 2002-08-28 (5687 DAYS) line 144
+Complete report step 189 (30 DAYS) at 2002-09-27 (5718 DAYS)
+
+Initializing report step 190/240 at 2002-09-27 (5718 DAYS) line 144
+Complete report step 190 (31 DAYS) at 2002-10-28 (5748 DAYS)
+
+Initializing report step 191/240 at 2002-10-28 (5748 DAYS) line 144
+Complete report step 191 (30 DAYS) at 2002-11-27 (5779 DAYS)
+
+Initializing report step 192/240 at 2002-11-27 (5779 DAYS) line 144
+Complete report step 192 (31 DAYS) at 2002-12-28 (5809 DAYS)
+
+Initializing report step 193/240 at 2002-12-28 (5809 DAYS) line 144
+Processing keyword WELOPEN at line 148
+Complete report step 193 (31 DAYS) at 2003-01-28 (5840 DAYS)
+
+Initializing report step 194/240 at 2003-01-28 (5840 DAYS) line 152
+Complete report step 194 (28 DAYS) at 2003-02-25 (5871 DAYS)
+
+Initializing report step 195/240 at 2003-02-25 (5871 DAYS) line 152
+Complete report step 195 (31 DAYS) at 2003-03-28 (5899 DAYS)
+
+Initializing report step 196/240 at 2003-03-28 (5899 DAYS) line 152
+Complete report step 196 (30 DAYS) at 2003-04-27 (5930 DAYS)
+
+Initializing report step 197/240 at 2003-04-27 (5930 DAYS) line 152
+Complete report step 197 (31 DAYS) at 2003-05-28 (5960 DAYS)
+
+Initializing report step 198/240 at 2003-05-28 (5960 DAYS) line 152
+Complete report step 198 (30 DAYS) at 2003-06-27 (5991 DAYS)
+
+Initializing report step 199/240 at 2003-06-27 (5991 DAYS) line 152
+Complete report step 199 (31 DAYS) at 2003-07-28 (6021 DAYS)
+
+Initializing report step 200/240 at 2003-07-28 (6021 DAYS) line 152
+Complete report step 200 (31 DAYS) at 2003-08-28 (6052 DAYS)
+
+Initializing report step 201/240 at 2003-08-28 (6052 DAYS) line 152
+Complete report step 201 (30 DAYS) at 2003-09-27 (6083 DAYS)
+
+Initializing report step 202/240 at 2003-09-27 (6083 DAYS) line 152
+Complete report step 202 (31 DAYS) at 2003-10-28 (6113 DAYS)
+
+Initializing report step 203/240 at 2003-10-28 (6113 DAYS) line 152
+Complete report step 203 (30 DAYS) at 2003-11-27 (6144 DAYS)
+
+Initializing report step 204/240 at 2003-11-27 (6144 DAYS) line 152
+Complete report step 204 (31 DAYS) at 2003-12-28 (6174 DAYS)
+
+Initializing report step 205/240 at 2003-12-28 (6174 DAYS) line 152
+Processing keyword WELOPEN at line 156
+Complete report step 205 (31 DAYS) at 2004-01-28 (6205 DAYS)
+
+Initializing report step 206/240 at 2004-01-28 (6205 DAYS) line 160
+Complete report step 206 (28 DAYS) at 2004-02-25 (6236 DAYS)
+
+Initializing report step 207/240 at 2004-02-25 (6236 DAYS) line 160
+Complete report step 207 (31 DAYS) at 2004-03-27 (6264 DAYS)
+
+Initializing report step 208/240 at 2004-03-27 (6264 DAYS) line 160
+Complete report step 208 (30 DAYS) at 2004-04-26 (6295 DAYS)
+
+Initializing report step 209/240 at 2004-04-26 (6295 DAYS) line 160
+Complete report step 209 (31 DAYS) at 2004-05-27 (6325 DAYS)
+
+Initializing report step 210/240 at 2004-05-27 (6325 DAYS) line 160
+Complete report step 210 (30 DAYS) at 2004-06-26 (6356 DAYS)
+
+Initializing report step 211/240 at 2004-06-26 (6356 DAYS) line 160
+Complete report step 211 (31 DAYS) at 2004-07-27 (6386 DAYS)
+
+Initializing report step 212/240 at 2004-07-27 (6386 DAYS) line 160
+Complete report step 212 (31 DAYS) at 2004-08-27 (6417 DAYS)
+
+Initializing report step 213/240 at 2004-08-27 (6417 DAYS) line 160
+Complete report step 213 (30 DAYS) at 2004-09-26 (6448 DAYS)
+
+Initializing report step 214/240 at 2004-09-26 (6448 DAYS) line 160
+Complete report step 214 (31 DAYS) at 2004-10-27 (6478 DAYS)
+
+Initializing report step 215/240 at 2004-10-27 (6478 DAYS) line 160
+Complete report step 215 (30 DAYS) at 2004-11-26 (6509 DAYS)
+
+Initializing report step 216/240 at 2004-11-26 (6509 DAYS) line 160
+Complete report step 216 (31 DAYS) at 2004-12-27 (6539 DAYS)
+
+Initializing report step 217/240 at 2004-12-27 (6539 DAYS) line 160
+Processing keyword WELOPEN at line 164
+Complete report step 217 (31 DAYS) at 2005-01-27 (6570 DAYS)
+
+Initializing report step 218/240 at 2005-01-27 (6570 DAYS) line 168
+Complete report step 218 (28 DAYS) at 2005-02-24 (6601 DAYS)
+
+Initializing report step 219/240 at 2005-02-24 (6601 DAYS) line 168
+Complete report step 219 (31 DAYS) at 2005-03-27 (6629 DAYS)
+
+Initializing report step 220/240 at 2005-03-27 (6629 DAYS) line 168
+Complete report step 220 (30 DAYS) at 2005-04-26 (6660 DAYS)
+
+Initializing report step 221/240 at 2005-04-26 (6660 DAYS) line 168
+Complete report step 221 (31 DAYS) at 2005-05-27 (6690 DAYS)
+
+Initializing report step 222/240 at 2005-05-27 (6690 DAYS) line 168
+Complete report step 222 (30 DAYS) at 2005-06-26 (6721 DAYS)
+
+Initializing report step 223/240 at 2005-06-26 (6721 DAYS) line 168
+Complete report step 223 (31 DAYS) at 2005-07-27 (6751 DAYS)
+
+Initializing report step 224/240 at 2005-07-27 (6751 DAYS) line 168
+Complete report step 224 (31 DAYS) at 2005-08-27 (6782 DAYS)
+
+Initializing report step 225/240 at 2005-08-27 (6782 DAYS) line 168
+Complete report step 225 (30 DAYS) at 2005-09-26 (6813 DAYS)
+
+Initializing report step 226/240 at 2005-09-26 (6813 DAYS) line 168
+Complete report step 226 (31 DAYS) at 2005-10-27 (6843 DAYS)
+
+Initializing report step 227/240 at 2005-10-27 (6843 DAYS) line 168
+Complete report step 227 (30 DAYS) at 2005-11-26 (6874 DAYS)
+
+Initializing report step 228/240 at 2005-11-26 (6874 DAYS) line 168
+Complete report step 228 (31 DAYS) at 2005-12-27 (6904 DAYS)
+
+Initializing report step 229/240 at 2005-12-27 (6904 DAYS) line 168
+Processing keyword WELOPEN at line 172
+Complete report step 229 (31 DAYS) at 2006-01-27 (6935 DAYS)
+
+Initializing report step 230/240 at 2006-01-27 (6935 DAYS) line 176
+Complete report step 230 (28 DAYS) at 2006-02-24 (6966 DAYS)
+
+Initializing report step 231/240 at 2006-02-24 (6966 DAYS) line 176
+Complete report step 231 (31 DAYS) at 2006-03-27 (6994 DAYS)
+
+Initializing report step 232/240 at 2006-03-27 (6994 DAYS) line 176
+Complete report step 232 (30 DAYS) at 2006-04-26 (7025 DAYS)
+
+Initializing report step 233/240 at 2006-04-26 (7025 DAYS) line 176
+Complete report step 233 (31 DAYS) at 2006-05-27 (7055 DAYS)
+
+Initializing report step 234/240 at 2006-05-27 (7055 DAYS) line 176
+Complete report step 234 (30 DAYS) at 2006-06-26 (7086 DAYS)
+
+Initializing report step 235/240 at 2006-06-26 (7086 DAYS) line 176
+Complete report step 235 (31 DAYS) at 2006-07-27 (7116 DAYS)
+
+Initializing report step 236/240 at 2006-07-27 (7116 DAYS) line 176
+Complete report step 236 (31 DAYS) at 2006-08-27 (7147 DAYS)
+
+Initializing report step 237/240 at 2006-08-27 (7147 DAYS) line 176
+Complete report step 237 (30 DAYS) at 2006-09-26 (7178 DAYS)
+
+Initializing report step 238/240 at 2006-09-26 (7178 DAYS) line 176
+Complete report step 238 (31 DAYS) at 2006-10-27 (7208 DAYS)
+
+Initializing report step 239/240 at 2006-10-27 (7208 DAYS) line 176
+Complete report step 239 (30 DAYS) at 2006-11-26 (7239 DAYS)
+
+Initializing report step 240/240 at 2006-11-26 (7239 DAYS) line 176
+Complete report step 240 (35 DAYS) at 2006-12-31 (7269 DAYS)
+
+
+Processing grid
+Total number of active cells: 147 / total pore volume: 65454545 RB
+
+Property tree for linear solvers:
+{
+    "maxiter": "20",
+    "tol": "0.0050000000000000001",
+    "verbosity": "0",
+    "solver": "bicgstab",
+    "preconditioner": {
+        "type": "cprw",
+        "use_well_weights": "false",
+        "add_wells": "true",
+        "weight_type": "trueimpes",
+        "pre_smooth": "0",
+        "post_smooth": "1",
+        "finesmoother": {
+            "type": "paroverilu0",
+            "relaxation": "1"
+        },
+        "verbosity": "0",
+        "coarsesolver": {
+            "maxiter": "1",
+            "tol": "0.10000000000000001",
+            "solver": "loopsolver",
+            "verbosity": "0",
+            "preconditioner": {
+                "type": "amg",
+                "alpha": "0.33333333333300003",
+                "relaxation": "1",
+                "iterations": "1",
+                "coarsenTarget": "1200",
+                "pre_smooth": "1",
+                "post_smooth": "1",
+                "beta": "0",
+                "smoother": "ilu0",
+                "verbosity": "0",
+                "maxlevel": "15",
+                "skip_isolated": "0",
+                "accumulate": "1",
+                "prolongationdamping": "1",
+                "maxdistance": "2",
+                "maxconnectivity": "15",
+                "maxaggsize": "6",
+                "minaggsize": "4"
+            }
+        }
+    }
+}
+
+
+
+================ Starting main simulation loop ===============
+
+
+Report step  0/240 at day 0/7304, date = 01-Jan-1987
+Restart file written for report step   0/240, date = 01-Jan-1987 00:00:00
+Using Newton nonlinear solver.
+
+Starting time step 0, stepsize 1 days, at day 0/31, date = 01-Jan-1987
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  0 (0.0sec)
+
+Starting time step 1, stepsize 3 days, at day 1/31, date = 02-Jan-1987
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  1 (0.0sec)
+
+Starting time step 2, stepsize 6.91526 days, at day 4/31, date = 05-Jan-1987
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  1 (0.0sec)
+
+Starting time step 3, stepsize 13.106 days, at day 10.9153/31, date = 11-Jan-1987
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+Starting time step 4, stepsize 6.97872 days, at day 24.0213/31, date = 25-Jan-1987
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step  1/240 at day 31/7304, date = 01-Feb-1987
+
+Starting time step 0, stepsize 15.7901 days, at day 31/59, date = 01-Feb-1987
+Restart file written for report step   1/240, date = 01-Feb-1987 00:00:00
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+Starting time step 1, stepsize 12.2099 days, at day 46.7901/59, date = 16-Feb-1987
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step  2/240 at day 59/7304, date = 01-Mar-1987
+
+Starting time step 0, stepsize 20.1879 days, at day 59/90, date = 01-Mar-1987
+Restart file written for report step   2/240, date = 01-Mar-1987 00:00:00
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  6 (0.0sec)
+
+Starting time step 1, stepsize 10.8121 days, at day 79.1879/90, date = 21-Mar-1987
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  5 (0.0sec)
+
+
+Report step  3/240 at day 90/7304, date = 01-Apr-1987
+
+Starting time step 0, stepsize 15 days, at day 90/120, date = 01-Apr-1987
+Restart file written for report step   3/240, date = 01-Apr-1987 00:00:00
+    Well PROD control mode changed from ORAT to BHP
+ Newton its= 5, linearizations= 6 (0.0sec), linear its=  4 (0.0sec)
+
+Starting time step 1, stepsize 15 days, at day 105/120, date = 16-Apr-1987
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step  4/240 at day 120/7304, date = 01-May-1987
+
+Starting time step 0, stepsize 31 days, at day 120/151, date = 01-May-1987
+Restart file written for report step   4/240, date = 01-May-1987 00:00:00
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step  5/240 at day 151/7304, date = 01-Jun-1987
+
+Starting time step 0, stepsize 30 days, at day 151/181, date = 01-Jun-1987
+Restart file written for report step   5/240, date = 01-Jun-1987 00:00:00
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step  6/240 at day 181/7304, date = 01-Jul-1987
+
+Starting time step 0, stepsize 31 days, at day 181/212, date = 01-Jul-1987
+Restart file written for report step   6/240, date = 01-Jul-1987 00:00:00
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step  7/240 at day 212/7304, date = 01-Aug-1987
+
+Starting time step 0, stepsize 31 days, at day 212/243, date = 01-Aug-1987
+Restart file written for report step   7/240, date = 01-Aug-1987 00:00:00
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step  8/240 at day 243/7304, date = 01-Sep-1987
+
+Starting time step 0, stepsize 30 days, at day 243/273, date = 01-Sep-1987
+Restart file written for report step   8/240, date = 01-Sep-1987 00:00:00
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step  9/240 at day 273/7304, date = 01-Oct-1987
+
+Starting time step 0, stepsize 31 days, at day 273/304, date = 01-Oct-1987
+Restart file written for report step   9/240, date = 01-Oct-1987 00:00:00
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step 10/240 at day 304/7304, date = 01-Nov-1987
+
+Starting time step 0, stepsize 30 days, at day 304/334, date = 01-Nov-1987
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+Restart file written for report step  10/240, date = 01-Nov-1987 00:00:00
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step 11/240 at day 334/7304, date = 01-Dec-1987
+
+Starting time step 0, stepsize 31 days, at day 334/365, date = 01-Dec-1987
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+Restart file written for report step  11/240, date = 01-Dec-1987 00:00:00
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step 12/240 at day 365/7304, date = 01-Jan-1988
+
+Starting time step 0, stepsize 31 days, at day 365/396, date = 01-Jan-1988
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+Restart file written for report step  12/240, date = 01-Jan-1988 00:00:00
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step 13/240 at day 396/7304, date = 01-Feb-1988
+
+Starting time step 0, stepsize 28 days, at day 396/424, date = 01-Feb-1988
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step  13/240, date = 01-Feb-1988 00:00:00
+
+
+Report step 14/240 at day 424/7304, date = 29-Feb-1988
+
+Starting time step 0, stepsize 31 days, at day 424/455, date = 29-Feb-1988
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step  14/240, date = 29-Feb-1988 00:00:00
+
+
+Report step 15/240 at day 455/7304, date = 31-Mar-1988
+
+Starting time step 0, stepsize 30 days, at day 455/485, date = 31-Mar-1988
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step  15/240, date = 31-Mar-1988 00:00:00
+
+
+Report step 16/240 at day 485/7304, date = 30-Apr-1988
+
+Starting time step 0, stepsize 31 days, at day 485/516, date = 30-Apr-1988
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step  16/240, date = 30-Apr-1988 00:00:00
+
+
+Report step 17/240 at day 516/7304, date = 31-May-1988
+
+Starting time step 0, stepsize 30 days, at day 516/546, date = 31-May-1988
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+Restart file written for report step  17/240, date = 31-May-1988 00:00:00
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step 18/240 at day 546/7304, date = 30-Jun-1988
+
+Starting time step 0, stepsize 31 days, at day 546/577, date = 30-Jun-1988
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step  18/240, date = 30-Jun-1988 00:00:00
+
+
+Report step 19/240 at day 577/7304, date = 31-Jul-1988
+
+Starting time step 0, stepsize 31 days, at day 577/608, date = 31-Jul-1988
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+Restart file written for report step  19/240, date = 31-Jul-1988 00:00:00
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step 20/240 at day 608/7304, date = 31-Aug-1988
+
+Starting time step 0, stepsize 30 days, at day 608/638, date = 31-Aug-1988
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step  20/240, date = 31-Aug-1988 00:00:00
+
+
+Report step 21/240 at day 638/7304, date = 30-Sep-1988
+
+Starting time step 0, stepsize 31 days, at day 638/669, date = 30-Sep-1988
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step  21/240, date = 30-Sep-1988 00:00:00
+
+
+Report step 22/240 at day 669/7304, date = 31-Oct-1988
+
+Starting time step 0, stepsize 30 days, at day 669/699, date = 31-Oct-1988
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step  22/240, date = 31-Oct-1988 00:00:00
+
+
+Report step 23/240 at day 699/7304, date = 30-Nov-1988
+
+Starting time step 0, stepsize 31 days, at day 699/730, date = 30-Nov-1988
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  23/240, date = 30-Nov-1988 00:00:00
+
+
+Report step 24/240 at day 730/7304, date = 31-Dec-1988
+
+Starting time step 0, stepsize 31 days, at day 730/761, date = 31-Dec-1988
+Restart file written for report step  24/240, date = 31-Dec-1988 00:00:00
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 5, linearizations= 6 (0.0sec), linear its=  6 (0.0sec)
+
+
+Report step 25/240 at day 761/7304, date = 31-Jan-1989
+
+Starting time step 0, stepsize 28 days, at day 761/789, date = 31-Jan-1989
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step  25/240, date = 31-Jan-1989 00:00:00
+
+
+Report step 26/240 at day 789/7304, date = 28-Feb-1989
+
+Starting time step 0, stepsize 31 days, at day 789/820, date = 28-Feb-1989
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+Restart file written for report step  26/240, date = 28-Feb-1989 00:00:00
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  4 (0.0sec)
+
+
+Report step 27/240 at day 820/7304, date = 31-Mar-1989
+
+Starting time step 0, stepsize 30 days, at day 820/850, date = 31-Mar-1989
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step  27/240, date = 31-Mar-1989 00:00:00
+
+
+Report step 28/240 at day 850/7304, date = 30-Apr-1989
+
+Starting time step 0, stepsize 31 days, at day 850/881, date = 30-Apr-1989
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  28/240, date = 30-Apr-1989 00:00:00
+
+
+Report step 29/240 at day 881/7304, date = 31-May-1989
+
+Starting time step 0, stepsize 30 days, at day 881/911, date = 31-May-1989
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  29/240, date = 31-May-1989 00:00:00
+
+
+Report step 30/240 at day 911/7304, date = 30-Jun-1989
+
+Starting time step 0, stepsize 31 days, at day 911/942, date = 30-Jun-1989
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  30/240, date = 30-Jun-1989 00:00:00
+
+
+Report step 31/240 at day 942/7304, date = 31-Jul-1989
+
+Starting time step 0, stepsize 31 days, at day 942/973, date = 31-Jul-1989
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+Restart file written for report step  31/240, date = 31-Jul-1989 00:00:00
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  4 (0.0sec)
+
+
+Report step 32/240 at day 973/7304, date = 31-Aug-1989
+
+Starting time step 0, stepsize 30 days, at day 973/1003, date = 31-Aug-1989
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  32/240, date = 31-Aug-1989 00:00:00
+
+
+Report step 33/240 at day 1003/7304, date = 30-Sep-1989
+
+Starting time step 0, stepsize 31 days, at day 1003/1034, date = 30-Sep-1989
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  33/240, date = 30-Sep-1989 00:00:00
+
+
+Report step 34/240 at day 1034/7304, date = 31-Oct-1989
+
+Starting time step 0, stepsize 30 days, at day 1034/1064, date = 31-Oct-1989
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  34/240, date = 31-Oct-1989 00:00:00
+
+
+Report step 35/240 at day 1064/7304, date = 30-Nov-1989
+
+Starting time step 0, stepsize 31 days, at day 1064/1095, date = 30-Nov-1989
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  35/240, date = 30-Nov-1989 00:00:00
+
+
+Report step 36/240 at day 1095/7304, date = 31-Dec-1989
+
+Starting time step 0, stepsize 31 days, at day 1095/1126, date = 31-Dec-1989
+Restart file written for report step  36/240, date = 31-Dec-1989 00:00:00
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its=10, linearizations=11 (0.0sec), linear its= 14 (0.0sec)
+
+
+Report step 37/240 at day 1126/7304, date = 31-Jan-1990
+
+Starting time step 0, stepsize 14 days, at day 1126/1154, date = 31-Jan-1990
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step  37/240, date = 31-Jan-1990 00:00:00
+
+Starting time step 1, stepsize 14 days, at day 1140/1154, date = 14-Feb-1990
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step 38/240 at day 1154/7304, date = 28-Feb-1990
+
+Starting time step 0, stepsize 31 days, at day 1154/1185, date = 28-Feb-1990
+Restart file written for report step  38/240, date = 28-Feb-1990 00:00:00
+    Oscillating behavior detected: Relaxation set to 0.900000
+    Oscillating behavior detected: Relaxation set to 0.800000
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its=19, linearizations=20 (0.0sec), linear its= 35 (0.0sec)
+
+
+Report step 39/240 at day 1185/7304, date = 31-Mar-1990
+
+Starting time step 0, stepsize 13.0526 days, at day 1185/1215, date = 31-Mar-1990
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step  39/240, date = 31-Mar-1990 00:00:00
+
+Starting time step 1, stepsize 16.9474 days, at day 1198.05/1215, date = 13-Apr-1990
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step 40/240 at day 1215/7304, date = 30-Apr-1990
+
+Starting time step 0, stepsize 31 days, at day 1215/1246, date = 30-Apr-1990
+Restart file written for report step  40/240, date = 30-Apr-1990 00:00:00
+    Oscillating behavior detected: Relaxation set to 0.900000
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its=12, linearizations=13 (0.0sec), linear its= 17 (0.0sec)
+
+
+Report step 41/240 at day 1246/7304, date = 31-May-1990
+
+Starting time step 0, stepsize 15 days, at day 1246/1276, date = 31-May-1990
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step  41/240, date = 31-May-1990 00:00:00
+
+Starting time step 1, stepsize 15 days, at day 1261/1276, date = 15-Jun-1990
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step 42/240 at day 1276/7304, date = 30-Jun-1990
+
+Starting time step 0, stepsize 31 days, at day 1276/1307, date = 30-Jun-1990
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  42/240, date = 30-Jun-1990 00:00:00
+
+
+Report step 43/240 at day 1307/7304, date = 31-Jul-1990
+
+Starting time step 0, stepsize 31 days, at day 1307/1338, date = 31-Jul-1990
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  43/240, date = 31-Jul-1990 00:00:00
+
+
+Report step 44/240 at day 1338/7304, date = 31-Aug-1990
+
+Starting time step 0, stepsize 30 days, at day 1338/1368, date = 31-Aug-1990
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  44/240, date = 31-Aug-1990 00:00:00
+
+
+Report step 45/240 at day 1368/7304, date = 30-Sep-1990
+
+Starting time step 0, stepsize 31 days, at day 1368/1399, date = 30-Sep-1990
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step  45/240, date = 30-Sep-1990 00:00:00
+
+
+Report step 46/240 at day 1399/7304, date = 31-Oct-1990
+
+Starting time step 0, stepsize 30 days, at day 1399/1429, date = 31-Oct-1990
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  46/240, date = 31-Oct-1990 00:00:00
+
+
+Report step 47/240 at day 1429/7304, date = 30-Nov-1990
+
+Starting time step 0, stepsize 31 days, at day 1429/1460, date = 30-Nov-1990
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  47/240, date = 30-Nov-1990 00:00:00
+
+
+Report step 48/240 at day 1460/7304, date = 31-Dec-1990
+
+Starting time step 0, stepsize 31 days, at day 1460/1491, date = 31-Dec-1990
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 5, linearizations= 6 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step  48/240, date = 31-Dec-1990 00:00:00
+
+
+Report step 49/240 at day 1491/7304, date = 31-Jan-1991
+
+Starting time step 0, stepsize 14 days, at day 1491/1519, date = 31-Jan-1991
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  49/240, date = 31-Jan-1991 00:00:00
+
+Starting time step 1, stepsize 14 days, at day 1505/1519, date = 14-Feb-1991
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step 50/240 at day 1519/7304, date = 28-Feb-1991
+
+Starting time step 0, stepsize 31 days, at day 1519/1550, date = 28-Feb-1991
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  50/240, date = 28-Feb-1991 00:00:00
+
+
+Report step 51/240 at day 1550/7304, date = 31-Mar-1991
+
+Starting time step 0, stepsize 30 days, at day 1550/1580, date = 31-Mar-1991
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  51/240, date = 31-Mar-1991 00:00:00
+
+
+Report step 52/240 at day 1580/7304, date = 30-Apr-1991
+
+Starting time step 0, stepsize 31 days, at day 1580/1611, date = 30-Apr-1991
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  52/240, date = 30-Apr-1991 00:00:00
+
+
+Report step 53/240 at day 1611/7304, date = 31-May-1991
+
+Starting time step 0, stepsize 30 days, at day 1611/1641, date = 31-May-1991
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  53/240, date = 31-May-1991 00:00:00
+
+
+Report step 54/240 at day 1641/7304, date = 30-Jun-1991
+
+Starting time step 0, stepsize 31 days, at day 1641/1672, date = 30-Jun-1991
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  54/240, date = 30-Jun-1991 00:00:00
+
+
+Report step 55/240 at day 1672/7304, date = 31-Jul-1991
+
+Starting time step 0, stepsize 31 days, at day 1672/1703, date = 31-Jul-1991
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  55/240, date = 31-Jul-1991 00:00:00
+
+
+Report step 56/240 at day 1703/7304, date = 31-Aug-1991
+
+Starting time step 0, stepsize 30 days, at day 1703/1733, date = 31-Aug-1991
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  56/240, date = 31-Aug-1991 00:00:00
+
+
+Report step 57/240 at day 1733/7304, date = 30-Sep-1991
+
+Starting time step 0, stepsize 31 days, at day 1733/1764, date = 30-Sep-1991
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  57/240, date = 30-Sep-1991 00:00:00
+
+
+Report step 58/240 at day 1764/7304, date = 31-Oct-1991
+
+Starting time step 0, stepsize 30 days, at day 1764/1794, date = 31-Oct-1991
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  58/240, date = 31-Oct-1991 00:00:00
+
+
+Report step 59/240 at day 1794/7304, date = 30-Nov-1991
+
+Starting time step 0, stepsize 31 days, at day 1794/1825, date = 30-Nov-1991
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  59/240, date = 30-Nov-1991 00:00:00
+
+
+Report step 60/240 at day 1825/7304, date = 31-Dec-1991
+
+Starting time step 0, stepsize 31 days, at day 1825/1856, date = 31-Dec-1991
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 5, linearizations= 6 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step  60/240, date = 31-Dec-1991 00:00:00
+
+
+Report step 61/240 at day 1856/7304, date = 31-Jan-1992
+
+Starting time step 0, stepsize 14 days, at day 1856/1884, date = 31-Jan-1992
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  61/240, date = 31-Jan-1992 00:00:00
+
+Starting time step 1, stepsize 14 days, at day 1870/1884, date = 14-Feb-1992
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step 62/240 at day 1884/7304, date = 28-Feb-1992
+
+Starting time step 0, stepsize 31 days, at day 1884/1915, date = 28-Feb-1992
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  62/240, date = 28-Feb-1992 00:00:00
+
+
+Report step 63/240 at day 1915/7304, date = 30-Mar-1992
+
+Starting time step 0, stepsize 30 days, at day 1915/1945, date = 30-Mar-1992
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step  63/240, date = 30-Mar-1992 00:00:00
+
+
+Report step 64/240 at day 1945/7304, date = 29-Apr-1992
+
+Starting time step 0, stepsize 31 days, at day 1945/1976, date = 29-Apr-1992
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  64/240, date = 29-Apr-1992 00:00:00
+
+
+Report step 65/240 at day 1976/7304, date = 30-May-1992
+
+Starting time step 0, stepsize 30 days, at day 1976/2006, date = 30-May-1992
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step  65/240, date = 30-May-1992 00:00:00
+
+
+Report step 66/240 at day 2006/7304, date = 29-Jun-1992
+
+Starting time step 0, stepsize 31 days, at day 2006/2037, date = 29-Jun-1992
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step  66/240, date = 29-Jun-1992 00:00:00
+
+
+Report step 67/240 at day 2037/7304, date = 30-Jul-1992
+
+Starting time step 0, stepsize 31 days, at day 2037/2068, date = 30-Jul-1992
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step  67/240, date = 30-Jul-1992 00:00:00
+
+
+Report step 68/240 at day 2068/7304, date = 30-Aug-1992
+
+Starting time step 0, stepsize 30 days, at day 2068/2098, date = 30-Aug-1992
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step  68/240, date = 30-Aug-1992 00:00:00
+
+
+Report step 69/240 at day 2098/7304, date = 29-Sep-1992
+
+Starting time step 0, stepsize 31 days, at day 2098/2129, date = 29-Sep-1992
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  69/240, date = 29-Sep-1992 00:00:00
+
+
+Report step 70/240 at day 2129/7304, date = 30-Oct-1992
+
+Starting time step 0, stepsize 30 days, at day 2129/2159, date = 30-Oct-1992
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  70/240, date = 30-Oct-1992 00:00:00
+
+
+Report step 71/240 at day 2159/7304, date = 29-Nov-1992
+
+Starting time step 0, stepsize 31 days, at day 2159/2190, date = 29-Nov-1992
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  71/240, date = 29-Nov-1992 00:00:00
+
+
+Report step 72/240 at day 2190/7304, date = 30-Dec-1992
+
+Starting time step 0, stepsize 31 days, at day 2190/2221, date = 30-Dec-1992
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step  72/240, date = 30-Dec-1992 00:00:00
+
+
+Report step 73/240 at day 2221/7304, date = 30-Jan-1993
+
+Starting time step 0, stepsize 14 days, at day 2221/2249, date = 30-Jan-1993
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  73/240, date = 30-Jan-1993 00:00:00
+
+Starting time step 1, stepsize 14 days, at day 2235/2249, date = 13-Feb-1993
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step 74/240 at day 2249/7304, date = 27-Feb-1993
+
+Starting time step 0, stepsize 31 days, at day 2249/2280, date = 27-Feb-1993
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  74/240, date = 27-Feb-1993 00:00:00
+
+
+Report step 75/240 at day 2280/7304, date = 30-Mar-1993
+
+Starting time step 0, stepsize 30 days, at day 2280/2310, date = 30-Mar-1993
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  75/240, date = 30-Mar-1993 00:00:00
+
+
+Report step 76/240 at day 2310/7304, date = 29-Apr-1993
+
+Starting time step 0, stepsize 31 days, at day 2310/2341, date = 29-Apr-1993
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step  76/240, date = 29-Apr-1993 00:00:00
+
+
+Report step 77/240 at day 2341/7304, date = 30-May-1993
+
+Starting time step 0, stepsize 30 days, at day 2341/2371, date = 30-May-1993
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  77/240, date = 30-May-1993 00:00:00
+
+
+Report step 78/240 at day 2371/7304, date = 29-Jun-1993
+
+Starting time step 0, stepsize 31 days, at day 2371/2402, date = 29-Jun-1993
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  78/240, date = 29-Jun-1993 00:00:00
+
+
+Report step 79/240 at day 2402/7304, date = 30-Jul-1993
+
+Starting time step 0, stepsize 31 days, at day 2402/2433, date = 30-Jul-1993
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  79/240, date = 30-Jul-1993 00:00:00
+
+
+Report step 80/240 at day 2433/7304, date = 30-Aug-1993
+
+Starting time step 0, stepsize 30 days, at day 2433/2463, date = 30-Aug-1993
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  80/240, date = 30-Aug-1993 00:00:00
+
+
+Report step 81/240 at day 2463/7304, date = 29-Sep-1993
+
+Starting time step 0, stepsize 31 days, at day 2463/2494, date = 29-Sep-1993
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  81/240, date = 29-Sep-1993 00:00:00
+
+
+Report step 82/240 at day 2494/7304, date = 30-Oct-1993
+
+Starting time step 0, stepsize 30 days, at day 2494/2524, date = 30-Oct-1993
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  82/240, date = 30-Oct-1993 00:00:00
+
+
+Report step 83/240 at day 2524/7304, date = 29-Nov-1993
+
+Starting time step 0, stepsize 31 days, at day 2524/2555, date = 29-Nov-1993
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  83/240, date = 29-Nov-1993 00:00:00
+
+
+Report step 84/240 at day 2555/7304, date = 30-Dec-1993
+
+Starting time step 0, stepsize 31 days, at day 2555/2586, date = 30-Dec-1993
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 5, linearizations= 6 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step  84/240, date = 30-Dec-1993 00:00:00
+
+
+Report step 85/240 at day 2586/7304, date = 30-Jan-1994
+
+Starting time step 0, stepsize 14 days, at day 2586/2614, date = 30-Jan-1994
+    Oscillating behavior detected: Relaxation set to 0.900000
+ Newton its= 5, linearizations= 6 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step  85/240, date = 30-Jan-1994 00:00:00
+
+Starting time step 1, stepsize 14 days, at day 2600/2614, date = 13-Feb-1994
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step 86/240 at day 2614/7304, date = 27-Feb-1994
+
+Starting time step 0, stepsize 31 days, at day 2614/2645, date = 27-Feb-1994
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  86/240, date = 27-Feb-1994 00:00:00
+
+
+Report step 87/240 at day 2645/7304, date = 30-Mar-1994
+
+Starting time step 0, stepsize 30 days, at day 2645/2675, date = 30-Mar-1994
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  87/240, date = 30-Mar-1994 00:00:00
+
+
+Report step 88/240 at day 2675/7304, date = 29-Apr-1994
+
+Starting time step 0, stepsize 31 days, at day 2675/2706, date = 29-Apr-1994
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  88/240, date = 29-Apr-1994 00:00:00
+
+
+Report step 89/240 at day 2706/7304, date = 30-May-1994
+
+Starting time step 0, stepsize 30 days, at day 2706/2736, date = 30-May-1994
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  89/240, date = 30-May-1994 00:00:00
+
+
+Report step 90/240 at day 2736/7304, date = 29-Jun-1994
+
+Starting time step 0, stepsize 31 days, at day 2736/2767, date = 29-Jun-1994
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  90/240, date = 29-Jun-1994 00:00:00
+
+
+Report step 91/240 at day 2767/7304, date = 30-Jul-1994
+
+Starting time step 0, stepsize 31 days, at day 2767/2798, date = 30-Jul-1994
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  91/240, date = 30-Jul-1994 00:00:00
+
+
+Report step 92/240 at day 2798/7304, date = 30-Aug-1994
+
+Starting time step 0, stepsize 30 days, at day 2798/2828, date = 30-Aug-1994
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  92/240, date = 30-Aug-1994 00:00:00
+
+
+Report step 93/240 at day 2828/7304, date = 29-Sep-1994
+
+Starting time step 0, stepsize 31 days, at day 2828/2859, date = 29-Sep-1994
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  93/240, date = 29-Sep-1994 00:00:00
+
+
+Report step 94/240 at day 2859/7304, date = 30-Oct-1994
+
+Starting time step 0, stepsize 30 days, at day 2859/2889, date = 30-Oct-1994
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step  94/240, date = 30-Oct-1994 00:00:00
+
+
+Report step 95/240 at day 2889/7304, date = 29-Nov-1994
+
+Starting time step 0, stepsize 31 days, at day 2889/2920, date = 29-Nov-1994
+    Oscillating behavior detected: Relaxation set to 0.900000
+    Oscillating behavior detected: Relaxation set to 0.800000
+    Oscillating behavior detected: Relaxation set to 0.700000
+    Oscillating behavior detected: Relaxation set to 0.600000
+    Oscillating behavior detected: Relaxation set to 0.500000
+Restart file written for report step  95/240, date = 29-Nov-1994 00:00:00
+
+Problem: Solver convergence failure - Iteration limit reached
+Timestep chopped to 10.23 days
+
+
+Starting time step 0, stepsize 10.23 days, at day 2889/2920, date = 29-Nov-1994
+    Oscillating behavior detected: Relaxation set to 0.900000
+    Oscillating behavior detected: Relaxation set to 0.800000
+    Oscillating behavior detected: Relaxation set to 0.700000
+    Oscillating behavior detected: Relaxation set to 0.600000
+    Oscillating behavior detected: Relaxation set to 0.500000
+    Oscillating behavior detected: Relaxation set to 0.500000
+    Oscillating behavior detected: Relaxation set to 0.500000
+    Oscillating behavior detected: Relaxation set to 0.500000
+    Oscillating behavior detected: Relaxation set to 0.500000
+    Oscillating behavior detected: Relaxation set to 0.500000
+    Oscillating behavior detected: Relaxation set to 0.500000
+
+Problem: Solver convergence failure - Iteration limit reached
+Timestep chopped to 3.3759 days
+
+
+Starting time step 0, stepsize 3.3759 days, at day 2889/2920, date = 29-Nov-1994
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+Starting time step 1, stepsize 6.7518 days, at day 2892.38/2920, date = 02-Dec-1994
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  2 (0.0sec)
+
+Starting time step 2, stepsize 20.8723 days, at day 2899.13/2920, date = 09-Dec-1994
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step 96/240 at day 2920/7304, date = 30-Dec-1994
+
+Starting time step 0, stepsize 31 days, at day 2920/2951, date = 30-Dec-1994
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step  96/240, date = 30-Dec-1994 00:00:00
+
+
+Report step 97/240 at day 2951/7304, date = 30-Jan-1995
+
+Starting time step 0, stepsize 14 days, at day 2951/2979, date = 30-Jan-1995
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step  97/240, date = 30-Jan-1995 00:00:00
+
+Starting time step 1, stepsize 14 days, at day 2965/2979, date = 13-Feb-1995
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step 98/240 at day 2979/7304, date = 27-Feb-1995
+
+Starting time step 0, stepsize 31 days, at day 2979/3010, date = 27-Feb-1995
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step  98/240, date = 27-Feb-1995 00:00:00
+
+
+Report step 99/240 at day 3010/7304, date = 30-Mar-1995
+
+Starting time step 0, stepsize 30 days, at day 3010/3040, date = 30-Mar-1995
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step  99/240, date = 30-Mar-1995 00:00:00
+
+
+Report step 100/240 at day 3040/7304, date = 29-Apr-1995
+
+Starting time step 0, stepsize 31 days, at day 3040/3071, date = 29-Apr-1995
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 100/240, date = 29-Apr-1995 00:00:00
+
+
+Report step 101/240 at day 3071/7304, date = 30-May-1995
+
+Starting time step 0, stepsize 30 days, at day 3071/3101, date = 30-May-1995
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 101/240, date = 30-May-1995 00:00:00
+
+
+Report step 102/240 at day 3101/7304, date = 29-Jun-1995
+
+Starting time step 0, stepsize 31 days, at day 3101/3132, date = 29-Jun-1995
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 102/240, date = 29-Jun-1995 00:00:00
+
+
+Report step 103/240 at day 3132/7304, date = 30-Jul-1995
+
+Starting time step 0, stepsize 31 days, at day 3132/3163, date = 30-Jul-1995
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 103/240, date = 30-Jul-1995 00:00:00
+
+
+Report step 104/240 at day 3163/7304, date = 30-Aug-1995
+
+Starting time step 0, stepsize 30 days, at day 3163/3193, date = 30-Aug-1995
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 104/240, date = 30-Aug-1995 00:00:00
+
+
+Report step 105/240 at day 3193/7304, date = 29-Sep-1995
+
+Starting time step 0, stepsize 31 days, at day 3193/3224, date = 29-Sep-1995
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 105/240, date = 29-Sep-1995 00:00:00
+
+
+Report step 106/240 at day 3224/7304, date = 30-Oct-1995
+
+Starting time step 0, stepsize 30 days, at day 3224/3254, date = 30-Oct-1995
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 106/240, date = 30-Oct-1995 00:00:00
+
+
+Report step 107/240 at day 3254/7304, date = 29-Nov-1995
+
+Starting time step 0, stepsize 31 days, at day 3254/3285, date = 29-Nov-1995
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 107/240, date = 29-Nov-1995 00:00:00
+
+
+Report step 108/240 at day 3285/7304, date = 30-Dec-1995
+
+Starting time step 0, stepsize 31 days, at day 3285/3316, date = 30-Dec-1995
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 5, linearizations= 6 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 108/240, date = 30-Dec-1995 00:00:00
+
+
+Report step 109/240 at day 3316/7304, date = 30-Jan-1996
+
+Starting time step 0, stepsize 14 days, at day 3316/3344, date = 30-Jan-1996
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 109/240, date = 30-Jan-1996 00:00:00
+
+Starting time step 1, stepsize 14 days, at day 3330/3344, date = 13-Feb-1996
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step 110/240 at day 3344/7304, date = 27-Feb-1996
+
+Starting time step 0, stepsize 31 days, at day 3344/3375, date = 27-Feb-1996
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 5, linearizations= 6 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 110/240, date = 27-Feb-1996 00:00:00
+
+
+Report step 111/240 at day 3375/7304, date = 29-Mar-1996
+
+Starting time step 0, stepsize 30 days, at day 3375/3405, date = 29-Mar-1996
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 111/240, date = 29-Mar-1996 00:00:00
+
+
+Report step 112/240 at day 3405/7304, date = 28-Apr-1996
+
+Starting time step 0, stepsize 31 days, at day 3405/3436, date = 28-Apr-1996
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 112/240, date = 28-Apr-1996 00:00:00
+
+
+Report step 113/240 at day 3436/7304, date = 29-May-1996
+
+Starting time step 0, stepsize 30 days, at day 3436/3466, date = 29-May-1996
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 113/240, date = 29-May-1996 00:00:00
+
+
+Report step 114/240 at day 3466/7304, date = 28-Jun-1996
+
+Starting time step 0, stepsize 31 days, at day 3466/3497, date = 28-Jun-1996
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 114/240, date = 28-Jun-1996 00:00:00
+
+
+Report step 115/240 at day 3497/7304, date = 29-Jul-1996
+
+Starting time step 0, stepsize 31 days, at day 3497/3528, date = 29-Jul-1996
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 115/240, date = 29-Jul-1996 00:00:00
+
+
+Report step 116/240 at day 3528/7304, date = 29-Aug-1996
+
+Starting time step 0, stepsize 30 days, at day 3528/3558, date = 29-Aug-1996
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 116/240, date = 29-Aug-1996 00:00:00
+
+
+Report step 117/240 at day 3558/7304, date = 28-Sep-1996
+
+Starting time step 0, stepsize 31 days, at day 3558/3589, date = 28-Sep-1996
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 117/240, date = 28-Sep-1996 00:00:00
+
+
+Report step 118/240 at day 3589/7304, date = 29-Oct-1996
+
+Starting time step 0, stepsize 30 days, at day 3589/3619, date = 29-Oct-1996
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 118/240, date = 29-Oct-1996 00:00:00
+
+
+Report step 119/240 at day 3619/7304, date = 28-Nov-1996
+
+Starting time step 0, stepsize 31 days, at day 3619/3650, date = 28-Nov-1996
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 119/240, date = 28-Nov-1996 00:00:00
+
+
+Report step 120/240 at day 3650/7304, date = 29-Dec-1996
+
+Starting time step 0, stepsize 31 days, at day 3650/3681, date = 29-Dec-1996
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 120/240, date = 29-Dec-1996 00:00:00
+
+
+Report step 121/240 at day 3681/7304, date = 29-Jan-1997
+
+Starting time step 0, stepsize 14 days, at day 3681/3709, date = 29-Jan-1997
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 121/240, date = 29-Jan-1997 00:00:00
+
+Starting time step 1, stepsize 14 days, at day 3695/3709, date = 12-Feb-1997
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step 122/240 at day 3709/7304, date = 26-Feb-1997
+
+Starting time step 0, stepsize 31 days, at day 3709/3740, date = 26-Feb-1997
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 122/240, date = 26-Feb-1997 00:00:00
+
+
+Report step 123/240 at day 3740/7304, date = 29-Mar-1997
+
+Starting time step 0, stepsize 30 days, at day 3740/3770, date = 29-Mar-1997
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 123/240, date = 29-Mar-1997 00:00:00
+
+
+Report step 124/240 at day 3770/7304, date = 28-Apr-1997
+
+Starting time step 0, stepsize 31 days, at day 3770/3801, date = 28-Apr-1997
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 124/240, date = 28-Apr-1997 00:00:00
+
+
+Report step 125/240 at day 3801/7304, date = 29-May-1997
+
+Starting time step 0, stepsize 30 days, at day 3801/3831, date = 29-May-1997
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 125/240, date = 29-May-1997 00:00:00
+
+
+Report step 126/240 at day 3831/7304, date = 28-Jun-1997
+
+Starting time step 0, stepsize 31 days, at day 3831/3862, date = 28-Jun-1997
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 126/240, date = 28-Jun-1997 00:00:00
+
+
+Report step 127/240 at day 3862/7304, date = 29-Jul-1997
+
+Starting time step 0, stepsize 31 days, at day 3862/3893, date = 29-Jul-1997
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 127/240, date = 29-Jul-1997 00:00:00
+
+
+Report step 128/240 at day 3893/7304, date = 29-Aug-1997
+
+Starting time step 0, stepsize 30 days, at day 3893/3923, date = 29-Aug-1997
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 128/240, date = 29-Aug-1997 00:00:00
+
+
+Report step 129/240 at day 3923/7304, date = 28-Sep-1997
+
+Starting time step 0, stepsize 31 days, at day 3923/3954, date = 28-Sep-1997
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 129/240, date = 28-Sep-1997 00:00:00
+
+
+Report step 130/240 at day 3954/7304, date = 29-Oct-1997
+
+Starting time step 0, stepsize 30 days, at day 3954/3984, date = 29-Oct-1997
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 130/240, date = 29-Oct-1997 00:00:00
+
+
+Report step 131/240 at day 3984/7304, date = 28-Nov-1997
+
+Starting time step 0, stepsize 31 days, at day 3984/4015, date = 28-Nov-1997
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 131/240, date = 28-Nov-1997 00:00:00
+
+
+Report step 132/240 at day 4015/7304, date = 29-Dec-1997
+
+Starting time step 0, stepsize 31 days, at day 4015/4046, date = 29-Dec-1997
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 7, linearizations= 8 (0.0sec), linear its=  8 (0.0sec)
+Restart file written for report step 132/240, date = 29-Dec-1997 00:00:00
+
+
+Report step 133/240 at day 4046/7304, date = 29-Jan-1998
+
+Starting time step 0, stepsize 28 days, at day 4046/4074, date = 29-Jan-1998
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 133/240, date = 29-Jan-1998 00:00:00
+
+
+Report step 134/240 at day 4074/7304, date = 26-Feb-1998
+
+Starting time step 0, stepsize 31 days, at day 4074/4105, date = 26-Feb-1998
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 134/240, date = 26-Feb-1998 00:00:00
+
+
+Report step 135/240 at day 4105/7304, date = 29-Mar-1998
+
+Starting time step 0, stepsize 30 days, at day 4105/4135, date = 29-Mar-1998
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 135/240, date = 29-Mar-1998 00:00:00
+
+
+Report step 136/240 at day 4135/7304, date = 28-Apr-1998
+
+Starting time step 0, stepsize 31 days, at day 4135/4166, date = 28-Apr-1998
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 136/240, date = 28-Apr-1998 00:00:00
+
+
+Report step 137/240 at day 4166/7304, date = 29-May-1998
+
+Starting time step 0, stepsize 30 days, at day 4166/4196, date = 29-May-1998
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 137/240, date = 29-May-1998 00:00:00
+
+
+Report step 138/240 at day 4196/7304, date = 28-Jun-1998
+
+Starting time step 0, stepsize 31 days, at day 4196/4227, date = 28-Jun-1998
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 138/240, date = 28-Jun-1998 00:00:00
+
+
+Report step 139/240 at day 4227/7304, date = 29-Jul-1998
+
+Starting time step 0, stepsize 31 days, at day 4227/4258, date = 29-Jul-1998
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 139/240, date = 29-Jul-1998 00:00:00
+
+
+Report step 140/240 at day 4258/7304, date = 29-Aug-1998
+
+Starting time step 0, stepsize 30 days, at day 4258/4288, date = 29-Aug-1998
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 140/240, date = 29-Aug-1998 00:00:00
+
+
+Report step 141/240 at day 4288/7304, date = 28-Sep-1998
+
+Starting time step 0, stepsize 31 days, at day 4288/4319, date = 28-Sep-1998
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 141/240, date = 28-Sep-1998 00:00:00
+
+
+Report step 142/240 at day 4319/7304, date = 29-Oct-1998
+
+Starting time step 0, stepsize 30 days, at day 4319/4349, date = 29-Oct-1998
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 142/240, date = 29-Oct-1998 00:00:00
+
+
+Report step 143/240 at day 4349/7304, date = 28-Nov-1998
+
+Starting time step 0, stepsize 31 days, at day 4349/4380, date = 28-Nov-1998
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 143/240, date = 28-Nov-1998 00:00:00
+
+
+Report step 144/240 at day 4380/7304, date = 29-Dec-1998
+
+Starting time step 0, stepsize 31 days, at day 4380/4411, date = 29-Dec-1998
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 144/240, date = 29-Dec-1998 00:00:00
+
+
+Report step 145/240 at day 4411/7304, date = 29-Jan-1999
+
+Starting time step 0, stepsize 28 days, at day 4411/4439, date = 29-Jan-1999
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 145/240, date = 29-Jan-1999 00:00:00
+
+
+Report step 146/240 at day 4439/7304, date = 26-Feb-1999
+
+Starting time step 0, stepsize 31 days, at day 4439/4470, date = 26-Feb-1999
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 146/240, date = 26-Feb-1999 00:00:00
+
+
+Report step 147/240 at day 4470/7304, date = 29-Mar-1999
+
+Starting time step 0, stepsize 30 days, at day 4470/4500, date = 29-Mar-1999
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 147/240, date = 29-Mar-1999 00:00:00
+
+
+Report step 148/240 at day 4500/7304, date = 28-Apr-1999
+
+Starting time step 0, stepsize 31 days, at day 4500/4531, date = 28-Apr-1999
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 148/240, date = 28-Apr-1999 00:00:00
+
+
+Report step 149/240 at day 4531/7304, date = 29-May-1999
+
+Starting time step 0, stepsize 30 days, at day 4531/4561, date = 29-May-1999
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 149/240, date = 29-May-1999 00:00:00
+
+
+Report step 150/240 at day 4561/7304, date = 28-Jun-1999
+
+Starting time step 0, stepsize 31 days, at day 4561/4592, date = 28-Jun-1999
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 150/240, date = 28-Jun-1999 00:00:00
+
+
+Report step 151/240 at day 4592/7304, date = 29-Jul-1999
+
+Starting time step 0, stepsize 31 days, at day 4592/4623, date = 29-Jul-1999
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 151/240, date = 29-Jul-1999 00:00:00
+
+
+Report step 152/240 at day 4623/7304, date = 29-Aug-1999
+
+Starting time step 0, stepsize 30 days, at day 4623/4653, date = 29-Aug-1999
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 152/240, date = 29-Aug-1999 00:00:00
+
+
+Report step 153/240 at day 4653/7304, date = 28-Sep-1999
+
+Starting time step 0, stepsize 31 days, at day 4653/4684, date = 28-Sep-1999
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 153/240, date = 28-Sep-1999 00:00:00
+
+
+Report step 154/240 at day 4684/7304, date = 29-Oct-1999
+
+Starting time step 0, stepsize 30 days, at day 4684/4714, date = 29-Oct-1999
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 154/240, date = 29-Oct-1999 00:00:00
+
+
+Report step 155/240 at day 4714/7304, date = 28-Nov-1999
+
+Starting time step 0, stepsize 31 days, at day 4714/4745, date = 28-Nov-1999
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 155/240, date = 28-Nov-1999 00:00:00
+
+
+Report step 156/240 at day 4745/7304, date = 29-Dec-1999
+
+Starting time step 0, stepsize 31 days, at day 4745/4776, date = 29-Dec-1999
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its=10, linearizations=11 (0.0sec), linear its= 18 (0.0sec)
+Restart file written for report step 156/240, date = 29-Dec-1999 00:00:00
+
+
+Report step 157/240 at day 4776/7304, date = 29-Jan-2000
+
+Starting time step 0, stepsize 14 days, at day 4776/4804, date = 29-Jan-2000
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 157/240, date = 29-Jan-2000 00:00:00
+
+Starting time step 1, stepsize 14 days, at day 4790/4804, date = 12-Feb-2000
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+
+
+Report step 158/240 at day 4804/7304, date = 26-Feb-2000
+
+Starting time step 0, stepsize 31 days, at day 4804/4835, date = 26-Feb-2000
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  7 (0.0sec)
+Restart file written for report step 158/240, date = 26-Feb-2000 00:00:00
+
+
+Report step 159/240 at day 4835/7304, date = 28-Mar-2000
+
+Starting time step 0, stepsize 30 days, at day 4835/4865, date = 28-Mar-2000
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 159/240, date = 28-Mar-2000 00:00:00
+
+
+Report step 160/240 at day 4865/7304, date = 27-Apr-2000
+
+Starting time step 0, stepsize 31 days, at day 4865/4896, date = 27-Apr-2000
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 160/240, date = 27-Apr-2000 00:00:00
+
+
+Report step 161/240 at day 4896/7304, date = 28-May-2000
+
+Starting time step 0, stepsize 30 days, at day 4896/4926, date = 28-May-2000
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 161/240, date = 28-May-2000 00:00:00
+
+
+Report step 162/240 at day 4926/7304, date = 27-Jun-2000
+
+Starting time step 0, stepsize 31 days, at day 4926/4957, date = 27-Jun-2000
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 162/240, date = 27-Jun-2000 00:00:00
+
+
+Report step 163/240 at day 4957/7304, date = 28-Jul-2000
+
+Starting time step 0, stepsize 31 days, at day 4957/4988, date = 28-Jul-2000
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 163/240, date = 28-Jul-2000 00:00:00
+
+
+Report step 164/240 at day 4988/7304, date = 28-Aug-2000
+
+Starting time step 0, stepsize 30 days, at day 4988/5018, date = 28-Aug-2000
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 164/240, date = 28-Aug-2000 00:00:00
+
+
+Report step 165/240 at day 5018/7304, date = 27-Sep-2000
+
+Starting time step 0, stepsize 31 days, at day 5018/5049, date = 27-Sep-2000
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 165/240, date = 27-Sep-2000 00:00:00
+
+
+Report step 166/240 at day 5049/7304, date = 28-Oct-2000
+
+Starting time step 0, stepsize 30 days, at day 5049/5079, date = 28-Oct-2000
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 166/240, date = 28-Oct-2000 00:00:00
+
+
+Report step 167/240 at day 5079/7304, date = 27-Nov-2000
+
+Starting time step 0, stepsize 31 days, at day 5079/5110, date = 27-Nov-2000
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 167/240, date = 27-Nov-2000 00:00:00
+
+
+Report step 168/240 at day 5110/7304, date = 28-Dec-2000
+
+Starting time step 0, stepsize 31 days, at day 5110/5141, date = 28-Dec-2000
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 168/240, date = 28-Dec-2000 00:00:00
+
+
+Report step 169/240 at day 5141/7304, date = 28-Jan-2001
+
+Starting time step 0, stepsize 28 days, at day 5141/5169, date = 28-Jan-2001
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 169/240, date = 28-Jan-2001 00:00:00
+
+
+Report step 170/240 at day 5169/7304, date = 25-Feb-2001
+
+Starting time step 0, stepsize 31 days, at day 5169/5200, date = 25-Feb-2001
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 170/240, date = 25-Feb-2001 00:00:00
+
+
+Report step 171/240 at day 5200/7304, date = 28-Mar-2001
+
+Starting time step 0, stepsize 30 days, at day 5200/5230, date = 28-Mar-2001
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 171/240, date = 28-Mar-2001 00:00:00
+
+
+Report step 172/240 at day 5230/7304, date = 27-Apr-2001
+
+Starting time step 0, stepsize 31 days, at day 5230/5261, date = 27-Apr-2001
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 172/240, date = 27-Apr-2001 00:00:00
+
+
+Report step 173/240 at day 5261/7304, date = 28-May-2001
+
+Starting time step 0, stepsize 30 days, at day 5261/5291, date = 28-May-2001
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 173/240, date = 28-May-2001 00:00:00
+
+
+Report step 174/240 at day 5291/7304, date = 27-Jun-2001
+
+Starting time step 0, stepsize 31 days, at day 5291/5322, date = 27-Jun-2001
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 174/240, date = 27-Jun-2001 00:00:00
+
+
+Report step 175/240 at day 5322/7304, date = 28-Jul-2001
+
+Starting time step 0, stepsize 31 days, at day 5322/5353, date = 28-Jul-2001
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 175/240, date = 28-Jul-2001 00:00:00
+
+
+Report step 176/240 at day 5353/7304, date = 28-Aug-2001
+
+Starting time step 0, stepsize 30 days, at day 5353/5383, date = 28-Aug-2001
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 176/240, date = 28-Aug-2001 00:00:00
+
+
+Report step 177/240 at day 5383/7304, date = 27-Sep-2001
+
+Starting time step 0, stepsize 31 days, at day 5383/5414, date = 27-Sep-2001
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 177/240, date = 27-Sep-2001 00:00:00
+
+
+Report step 178/240 at day 5414/7304, date = 28-Oct-2001
+
+Starting time step 0, stepsize 30 days, at day 5414/5444, date = 28-Oct-2001
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step 178/240, date = 28-Oct-2001 00:00:00
+
+
+Report step 179/240 at day 5444/7304, date = 27-Nov-2001
+
+Starting time step 0, stepsize 31 days, at day 5444/5475, date = 27-Nov-2001
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step 179/240, date = 27-Nov-2001 00:00:00
+
+
+Report step 180/240 at day 5475/7304, date = 28-Dec-2001
+
+Starting time step 0, stepsize 31 days, at day 5475/5506, date = 28-Dec-2001
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its=11, linearizations=12 (0.0sec), linear its= 18 (0.0sec)
+Restart file written for report step 180/240, date = 28-Dec-2001 00:00:00
+
+
+Report step 181/240 at day 5506/7304, date = 28-Jan-2002
+
+Starting time step 0, stepsize 14 days, at day 5506/5534, date = 28-Jan-2002
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 181/240, date = 28-Jan-2002 00:00:00
+
+Starting time step 1, stepsize 14 days, at day 5520/5534, date = 11-Feb-2002
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+
+
+Report step 182/240 at day 5534/7304, date = 25-Feb-2002
+
+Starting time step 0, stepsize 31 days, at day 5534/5565, date = 25-Feb-2002
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 182/240, date = 25-Feb-2002 00:00:00
+
+
+Report step 183/240 at day 5565/7304, date = 28-Mar-2002
+
+Starting time step 0, stepsize 30 days, at day 5565/5595, date = 28-Mar-2002
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 183/240, date = 28-Mar-2002 00:00:00
+
+
+Report step 184/240 at day 5595/7304, date = 27-Apr-2002
+
+Starting time step 0, stepsize 31 days, at day 5595/5626, date = 27-Apr-2002
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 184/240, date = 27-Apr-2002 00:00:00
+
+
+Report step 185/240 at day 5626/7304, date = 28-May-2002
+
+Starting time step 0, stepsize 30 days, at day 5626/5656, date = 28-May-2002
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 185/240, date = 28-May-2002 00:00:00
+
+
+Report step 186/240 at day 5656/7304, date = 27-Jun-2002
+
+Starting time step 0, stepsize 31 days, at day 5656/5687, date = 27-Jun-2002
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 186/240, date = 27-Jun-2002 00:00:00
+
+
+Report step 187/240 at day 5687/7304, date = 28-Jul-2002
+
+Starting time step 0, stepsize 31 days, at day 5687/5718, date = 28-Jul-2002
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 187/240, date = 28-Jul-2002 00:00:00
+
+
+Report step 188/240 at day 5718/7304, date = 28-Aug-2002
+
+Starting time step 0, stepsize 30 days, at day 5718/5748, date = 28-Aug-2002
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 188/240, date = 28-Aug-2002 00:00:00
+
+
+Report step 189/240 at day 5748/7304, date = 27-Sep-2002
+
+Starting time step 0, stepsize 31 days, at day 5748/5779, date = 27-Sep-2002
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 189/240, date = 27-Sep-2002 00:00:00
+
+
+Report step 190/240 at day 5779/7304, date = 28-Oct-2002
+
+Starting time step 0, stepsize 30 days, at day 5779/5809, date = 28-Oct-2002
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 190/240, date = 28-Oct-2002 00:00:00
+
+
+Report step 191/240 at day 5809/7304, date = 27-Nov-2002
+
+Starting time step 0, stepsize 31 days, at day 5809/5840, date = 27-Nov-2002
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 191/240, date = 27-Nov-2002 00:00:00
+
+
+Report step 192/240 at day 5840/7304, date = 28-Dec-2002
+
+Starting time step 0, stepsize 31 days, at day 5840/5871, date = 28-Dec-2002
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 192/240, date = 28-Dec-2002 00:00:00
+
+
+Report step 193/240 at day 5871/7304, date = 28-Jan-2003
+
+Starting time step 0, stepsize 28 days, at day 5871/5899, date = 28-Jan-2003
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 193/240, date = 28-Jan-2003 00:00:00
+
+
+Report step 194/240 at day 5899/7304, date = 25-Feb-2003
+
+Starting time step 0, stepsize 31 days, at day 5899/5930, date = 25-Feb-2003
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 194/240, date = 25-Feb-2003 00:00:00
+
+
+Report step 195/240 at day 5930/7304, date = 28-Mar-2003
+
+Starting time step 0, stepsize 30 days, at day 5930/5960, date = 28-Mar-2003
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 195/240, date = 28-Mar-2003 00:00:00
+
+
+Report step 196/240 at day 5960/7304, date = 27-Apr-2003
+
+Starting time step 0, stepsize 31 days, at day 5960/5991, date = 27-Apr-2003
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 196/240, date = 27-Apr-2003 00:00:00
+
+
+Report step 197/240 at day 5991/7304, date = 28-May-2003
+
+Starting time step 0, stepsize 30 days, at day 5991/6021, date = 28-May-2003
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 197/240, date = 28-May-2003 00:00:00
+
+
+Report step 198/240 at day 6021/7304, date = 27-Jun-2003
+
+Starting time step 0, stepsize 31 days, at day 6021/6052, date = 27-Jun-2003
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 198/240, date = 27-Jun-2003 00:00:00
+
+
+Report step 199/240 at day 6052/7304, date = 28-Jul-2003
+
+Starting time step 0, stepsize 31 days, at day 6052/6083, date = 28-Jul-2003
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 199/240, date = 28-Jul-2003 00:00:00
+
+
+Report step 200/240 at day 6083/7304, date = 28-Aug-2003
+
+Starting time step 0, stepsize 30 days, at day 6083/6113, date = 28-Aug-2003
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 200/240, date = 28-Aug-2003 00:00:00
+
+
+Report step 201/240 at day 6113/7304, date = 27-Sep-2003
+
+Starting time step 0, stepsize 31 days, at day 6113/6144, date = 27-Sep-2003
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 201/240, date = 27-Sep-2003 00:00:00
+
+
+Report step 202/240 at day 6144/7304, date = 28-Oct-2003
+
+Starting time step 0, stepsize 30 days, at day 6144/6174, date = 28-Oct-2003
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step 202/240, date = 28-Oct-2003 00:00:00
+
+
+Report step 203/240 at day 6174/7304, date = 27-Nov-2003
+
+Starting time step 0, stepsize 31 days, at day 6174/6205, date = 27-Nov-2003
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step 203/240, date = 27-Nov-2003 00:00:00
+
+
+Report step 204/240 at day 6205/7304, date = 28-Dec-2003
+
+Starting time step 0, stepsize 31 days, at day 6205/6236, date = 28-Dec-2003
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 8, linearizations= 9 (0.0sec), linear its= 13 (0.0sec)
+Restart file written for report step 204/240, date = 28-Dec-2003 00:00:00
+
+
+Report step 205/240 at day 6236/7304, date = 28-Jan-2004
+
+Starting time step 0, stepsize 28 days, at day 6236/6264, date = 28-Jan-2004
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 205/240, date = 28-Jan-2004 00:00:00
+
+
+Report step 206/240 at day 6264/7304, date = 25-Feb-2004
+
+Starting time step 0, stepsize 31 days, at day 6264/6295, date = 25-Feb-2004
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 206/240, date = 25-Feb-2004 00:00:00
+
+
+Report step 207/240 at day 6295/7304, date = 27-Mar-2004
+
+Starting time step 0, stepsize 30 days, at day 6295/6325, date = 27-Mar-2004
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 207/240, date = 27-Mar-2004 00:00:00
+
+
+Report step 208/240 at day 6325/7304, date = 26-Apr-2004
+
+Starting time step 0, stepsize 31 days, at day 6325/6356, date = 26-Apr-2004
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 208/240, date = 26-Apr-2004 00:00:00
+
+
+Report step 209/240 at day 6356/7304, date = 27-May-2004
+
+Starting time step 0, stepsize 30 days, at day 6356/6386, date = 27-May-2004
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 209/240, date = 27-May-2004 00:00:00
+
+
+Report step 210/240 at day 6386/7304, date = 26-Jun-2004
+
+Starting time step 0, stepsize 31 days, at day 6386/6417, date = 26-Jun-2004
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 210/240, date = 26-Jun-2004 00:00:00
+
+
+Report step 211/240 at day 6417/7304, date = 27-Jul-2004
+
+Starting time step 0, stepsize 31 days, at day 6417/6448, date = 27-Jul-2004
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 211/240, date = 27-Jul-2004 00:00:00
+
+
+Report step 212/240 at day 6448/7304, date = 27-Aug-2004
+
+Starting time step 0, stepsize 30 days, at day 6448/6478, date = 27-Aug-2004
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 212/240, date = 27-Aug-2004 00:00:00
+
+
+Report step 213/240 at day 6478/7304, date = 26-Sep-2004
+
+Starting time step 0, stepsize 31 days, at day 6478/6509, date = 26-Sep-2004
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 213/240, date = 26-Sep-2004 00:00:00
+
+
+Report step 214/240 at day 6509/7304, date = 27-Oct-2004
+
+Starting time step 0, stepsize 30 days, at day 6509/6539, date = 27-Oct-2004
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 214/240, date = 27-Oct-2004 00:00:00
+
+
+Report step 215/240 at day 6539/7304, date = 26-Nov-2004
+
+Starting time step 0, stepsize 31 days, at day 6539/6570, date = 26-Nov-2004
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 215/240, date = 26-Nov-2004 00:00:00
+
+
+Report step 216/240 at day 6570/7304, date = 27-Dec-2004
+
+Starting time step 0, stepsize 31 days, at day 6570/6601, date = 27-Dec-2004
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 216/240, date = 27-Dec-2004 00:00:00
+
+
+Report step 217/240 at day 6601/7304, date = 27-Jan-2005
+
+Starting time step 0, stepsize 28 days, at day 6601/6629, date = 27-Jan-2005
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 217/240, date = 27-Jan-2005 00:00:00
+
+
+Report step 218/240 at day 6629/7304, date = 24-Feb-2005
+
+Starting time step 0, stepsize 31 days, at day 6629/6660, date = 24-Feb-2005
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 218/240, date = 24-Feb-2005 00:00:00
+
+
+Report step 219/240 at day 6660/7304, date = 27-Mar-2005
+
+Starting time step 0, stepsize 30 days, at day 6660/6690, date = 27-Mar-2005
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 219/240, date = 27-Mar-2005 00:00:00
+
+
+Report step 220/240 at day 6690/7304, date = 26-Apr-2005
+
+Starting time step 0, stepsize 31 days, at day 6690/6721, date = 26-Apr-2005
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 220/240, date = 26-Apr-2005 00:00:00
+
+
+Report step 221/240 at day 6721/7304, date = 27-May-2005
+
+Starting time step 0, stepsize 30 days, at day 6721/6751, date = 27-May-2005
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 221/240, date = 27-May-2005 00:00:00
+
+
+Report step 222/240 at day 6751/7304, date = 26-Jun-2005
+
+Starting time step 0, stepsize 31 days, at day 6751/6782, date = 26-Jun-2005
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 222/240, date = 26-Jun-2005 00:00:00
+
+
+Report step 223/240 at day 6782/7304, date = 27-Jul-2005
+
+Starting time step 0, stepsize 31 days, at day 6782/6813, date = 27-Jul-2005
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 223/240, date = 27-Jul-2005 00:00:00
+
+
+Report step 224/240 at day 6813/7304, date = 27-Aug-2005
+
+Starting time step 0, stepsize 30 days, at day 6813/6843, date = 27-Aug-2005
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+Restart file written for report step 224/240, date = 27-Aug-2005 00:00:00
+
+
+Report step 225/240 at day 6843/7304, date = 26-Sep-2005
+
+Starting time step 0, stepsize 31 days, at day 6843/6874, date = 26-Sep-2005
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step 225/240, date = 26-Sep-2005 00:00:00
+
+
+Report step 226/240 at day 6874/7304, date = 27-Oct-2005
+
+Starting time step 0, stepsize 30 days, at day 6874/6904, date = 27-Oct-2005
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step 226/240, date = 27-Oct-2005 00:00:00
+
+
+Report step 227/240 at day 6904/7304, date = 26-Nov-2005
+
+Starting time step 0, stepsize 31 days, at day 6904/6935, date = 26-Nov-2005
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+Restart file written for report step 227/240, date = 26-Nov-2005 00:00:00
+
+
+Report step 228/240 at day 6935/7304, date = 27-Dec-2005
+
+Starting time step 0, stepsize 31 days, at day 6935/6966, date = 27-Dec-2005
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 8, linearizations= 9 (0.0sec), linear its= 11 (0.0sec)
+Restart file written for report step 228/240, date = 27-Dec-2005 00:00:00
+
+
+Report step 229/240 at day 6966/7304, date = 27-Jan-2006
+
+Starting time step 0, stepsize 28 days, at day 6966/6994, date = 27-Jan-2006
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  7 (0.0sec)
+Restart file written for report step 229/240, date = 27-Jan-2006 00:00:00
+
+
+Report step 230/240 at day 6994/7304, date = 24-Feb-2006
+
+Starting time step 0, stepsize 31 days, at day 6994/7025, date = 24-Feb-2006
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 230/240, date = 24-Feb-2006 00:00:00
+
+
+Report step 231/240 at day 7025/7304, date = 27-Mar-2006
+
+Starting time step 0, stepsize 30 days, at day 7025/7055, date = 27-Mar-2006
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 231/240, date = 27-Mar-2006 00:00:00
+
+
+Report step 232/240 at day 7055/7304, date = 26-Apr-2006
+
+Starting time step 0, stepsize 31 days, at day 7055/7086, date = 26-Apr-2006
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  7 (0.0sec)
+Restart file written for report step 232/240, date = 26-Apr-2006 00:00:00
+
+
+Report step 233/240 at day 7086/7304, date = 27-May-2006
+
+Starting time step 0, stepsize 30 days, at day 7086/7116, date = 27-May-2006
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 233/240, date = 27-May-2006 00:00:00
+
+
+Report step 234/240 at day 7116/7304, date = 26-Jun-2006
+
+Starting time step 0, stepsize 31 days, at day 7116/7147, date = 26-Jun-2006
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 234/240, date = 26-Jun-2006 00:00:00
+
+
+Report step 235/240 at day 7147/7304, date = 27-Jul-2006
+
+Starting time step 0, stepsize 31 days, at day 7147/7178, date = 27-Jul-2006
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 235/240, date = 27-Jul-2006 00:00:00
+
+
+Report step 236/240 at day 7178/7304, date = 27-Aug-2006
+
+Starting time step 0, stepsize 30 days, at day 7178/7208, date = 27-Aug-2006
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  5 (0.0sec)
+Restart file written for report step 236/240, date = 27-Aug-2006 00:00:00
+
+
+Report step 237/240 at day 7208/7304, date = 26-Sep-2006
+
+Starting time step 0, stepsize 31 days, at day 7208/7239, date = 26-Sep-2006
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  4 (0.0sec)
+Restart file written for report step 237/240, date = 26-Sep-2006 00:00:00
+
+
+Report step 238/240 at day 7239/7304, date = 27-Oct-2006
+
+Starting time step 0, stepsize 30 days, at day 7239/7269, date = 27-Oct-2006
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 238/240, date = 27-Oct-2006 00:00:00
+
+
+Report step 239/240 at day 7269/7304, date = 26-Nov-2006
+
+Starting time step 0, stepsize 35 days, at day 7269/7304, date = 26-Nov-2006
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  6 (0.0sec)
+Restart file written for report step 239/240, date = 26-Nov-2006 00:00:00
+
+Restart file written for report step 240/240, date = 31-Dec-2006 00:00:00
+
+
+================    End of simulation     ===============
+
+Number of MPI processes:         1
+Threads per MPI process:         2
+Setup time:                      0.22 s
+  Deck input:                    0.17 s
+Number of timesteps:           263
+Simulation time:                 5.68 s
+  Assembly time:                 0.38 s (Wasted: 0.0 s; 3.1%)
+    Well assembly:               0.12 s (Wasted: 0.0 s; 2.5%)
+  Linear solve time:             0.53 s (Wasted: 0.0 s; 4.3%)
+    Linear setup:                0.38 s (Wasted: 0.0 s; 4.4%)
+  Props/update time:             0.24 s (Wasted: 0.0 s; 5.0%)
+  Pre/post step:                 0.26 s (Wasted: 0.0 s; 0.3%)
+  Output write time:             4.14 s
+Overall Linearizations:       1141      (Wasted:    42; 3.7%)
+Overall Newton Iterations:     880      (Wasted:    42; 4.8%)
+Overall Linear Iterations:    1078      (Wasted:    44; 4.1%)
+
+
+
+Error summary:
+Warnings          481
+Info              1164
+Errors            0
+Bugs              0
+Debug             0
+Problems          2
+

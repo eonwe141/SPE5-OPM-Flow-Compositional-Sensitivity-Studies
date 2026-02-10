@@ -1,0 +1,649 @@
+
+
+
+ ########  #          ######   #           #
+ #         #         #      #   #         # 
+ #####     #         #      #    #   #   #  
+ #         #         #      #     # # # #   
+ #         #######    ######       #   #    
+
+Flow is a simulator for fully implicit three-phase black-oil flow, and is part of OPM.
+For more information visit: https://opm-project.org 
+
+Flow Version     =  2025.10 (Ubuntu 24.04.3 LTS: 2025.10-1~noble)
+Machine name     =  Ghost (Number of logical cores: 16, Memory size: 7848.19 MB) 
+Operating system =  Linux x86_64 (Kernel: 6.6.87.2-microsoft-standard-WSL2, #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 )
+Build time       =  
+Simulation started on 04-02-2026 at 12:36:33 hrs
+Using 1 MPI processes with 2 OMP threads on each 
+Parameters used by Flow:
+# [known parameters which were specified at run-time]
+EclDeckFileName="SPE5_2INJ_2PROD.DATA" # default: ""
+OutputDir="CASE_2INJ2PROD" # default: ""
+# [parameters which were specified at compile-time]
+AcceleratorMode="none"
+ActionParsingStrictness="normal"
+AddCorners="0"
+AllowDistributedWells="0"
+AllowSplittingInactiveWells="1"
+AlternativeWellRateInit="1"
+CheckGroupConstraintsInnerWellIterations="1"
+CheckSatfuncConsistency="1"
+ContinueOnConvergenceError="0"
+ConvergenceMonitoring="0"
+ConvergenceMonitoringCutOff="6"
+ConvergenceMonitoringDecayFactor="0.75"
+CprReuseInterval="30"
+CprReuseSetup="4"
+CprWeightsThreadParallel="0"
+DbhpMaxRel="1"
+DebugEmitCellPartition="0"
+DebugVerbosityLevel="1"
+DpMaxRel="0.3"
+DsMax="0.2"
+DwellFractionMax="0.2"
+EclOutputDoublePrecision="0"
+EclOutputInterval="-1"
+EdgeConformal="0"
+EdgeWeightsMethod="transmissibility"
+EnableAdaptiveTimeStepping="1"
+EnableAsyncEclOutput="1"
+EnableAsyncVtkOutput="1"
+EnableDriftCompensation="0"
+EnableDryRun="auto"
+EnableEclOutput="1"
+EnableEsmry="0"
+EnableGravity="1"
+EnableGridAdaptation="0"
+EnableIntensiveQuantityCache="1"
+EnableLoggingFalloutWarning="0"
+EnableOpmRstFile="0"
+EnableStorageCache="1"
+EnableTerminalOutput="1"
+EnableThermodynamicHints="0"
+EnableTuning="0"
+EnableVtkOutput="0"
+EnableWellOperabilityCheck="1"
+EnableWellOperabilityCheckIter="0"
+EnableWriteAllSolutions="0"
+EndTime="1e+100"
+ExplicitRockCompaction="0"
+ExternalPartition=""
+ForceDisableFluidInPlaceOutput="0"
+ForceDisableResvFluidInPlaceOutput="0"
+FullTimeStepInitially="0"
+GpuAwareMpi="0"
+GpuDeviceId="0"
+HyNeConfigFile="hybridNewtonConfig.json"
+IgnoreKeywords=""
+IluFillinLevel="0"
+IluRedblack="0"
+IluRelaxation="0.9"
+IluReorderSpheres="0"
+ImbalanceTol="1.1"
+InitialTimeStepInDays="1"
+InitialTimeStepSize="86400"
+InjMultDampMult="0.9"
+InjMultMinDampFactor="0.05"
+InjMultOscThreshold="0.1"
+InputSkipMode="100"
+LinearSolver="cprw"
+LinearSolverAccelerator="cpu"
+LinearSolverIgnoreConvergenceFailure="0"
+LinearSolverMaxIter="200"
+LinearSolverPrintJsonDefinition="1"
+LinearSolverReduction="0.01"
+LinearSolverRestart="40"
+LinearSolverVerbosity="0"
+LoadFile=""
+LoadStep="-1"
+LocalDomainsOrderingMeasure="maxpressure"
+LocalDomainsPartitionWellNeighborLevels="1"
+LocalDomainsPartitioningImbalance="1.03"
+LocalDomainsPartitioningMethod="zoltan"
+LocalSolveApproach="gauss-seidel"
+LocalToleranceScalingCnv="0.1"
+LocalToleranceScalingMb="1"
+LocalWellSolveControlSwitching="1"
+MatrixAddWellContributions="0"
+MaxInnerIterMsWells="100"
+MaxInnerIterWells="50"
+MaxLocalSolveIterations="20"
+MaxNewtonIterationsWithInnerWellIterations="8"
+MaxPressureChangeMsWells="1e+06"
+MaxResidualAllowed="1e+07"
+MaxSinglePrecisionDays="20"
+MaxTemperatureChange="5"
+MaxTimeStepDivisions="10"
+MaxTimeStepSize="inf"
+MaxWellStatusSwitchForWells="99"
+MaxWellStatusSwitchInInnerIterWells="99"
+MaxWelleqIter="30"
+MaximumNumberOfGroupSwitches="3"
+MaximumNumberOfWellSwitches="3"
+MaximumWaterSaturation="1"
+MetisParams="default"
+MiluVariant="ilu"
+MinStrictCnvIter="-1"
+MinStrictMbIter="-1"
+MinTimeStepBasedOnNewtonIterations="0"
+MinTimeStepBeforeShuttingProblematicWellsInDays="0.01"
+MinTimeStepSize="0"
+NetworkMaxOuterIterations="10"
+NetworkMaxPressureUpdateInBars="5"
+NetworkMaxStrictOuterIterations="10"
+NetworkMaxSubIterations="20"
+NetworkPressureUpdateDampingFactor="0.1"
+NewtonMaxError="1e+100"
+NewtonMaxIterations="20"
+NewtonMaxRelax="0.5"
+NewtonMinIterations="2"
+NewtonRelaxationType="dampen"
+NewtonTargetIterations="10"
+NewtonTolerance="0.01"
+NewtonVerbose="1"
+NewtonWriteConvergence="0"
+NlddLocalLinearSolver="ilu0"
+NlddLocalLinearSolverMaxIter="200"
+NlddLocalLinearSolverReduction="0.01"
+NlddNumInitialNewtonIter="1"
+NlddRelativeMobilityChangeTol="0.1"
+NonlinearSolver="newton"
+NumLocalDomains="0"
+NumOverlap="1"
+NumPressurePointsEquil="2000"
+NumSatfuncConsistencySamplePoints="5"
+NupcolGroupRateTolerance="0.001"
+OpenclIluParallel="1"
+OpenclPlatformId="0"
+OutputExtraConvergenceInfo="none"
+OutputInterval="1"
+OutputMode="all"
+OwnerCellsFirst="1"
+ParameterFile=""
+ParsingStrictness="normal"
+PartitionMethod="zoltanwell"
+PreSolveNetwork="1"
+PredeterminedTimeStepsFile=""
+PressureMax="1e+99"
+PressureMin="-1e+99"
+PressureScale="1"
+PriVarOscilationThreshold="1e-05"
+PrintParameters="2"
+ProjectSaturations="0"
+RegularizationFactorWells="100"
+RelaxedLinearSolverReduction="0.01"
+RelaxedMaxPvFraction="0.03"
+RelaxedPressureTolMsw="10000"
+RelaxedWellFlowTol="0.001"
+RestartTime="-1e+35"
+RestartWritingInterval="16777215"
+SaveFile=""
+SaveStep=""
+ScaleLinearSystem="0"
+SchedRestart="0"
+SerialPartitioning="0"
+ShutUnsolvableWells="1"
+Slave="0"
+SolveWelleqInitially="1"
+SolverContinueOnConvergenceFailure="0"
+SolverGrowthFactor="2"
+SolverMaxGrowth="3"
+SolverMaxRestarts="10"
+SolverMaxTimeStepInDays="365"
+SolverMinTimeStep="1e-12"
+SolverRestartFactor="0.33"
+SolverVerbosity="1"
+StrictInnerIterWells="40"
+StrictOuterIterWells="6"
+TemperatureMax="1e+09"
+TemperatureMin="0"
+ThreadsPerProcess="2"
+TimeStepAfterEventInDays="-1"
+TimeStepControl="pid+newtoniteration"
+TimeStepControlDecayDampingFactor="1"
+TimeStepControlDecayRate="0.75"
+TimeStepControlFileName="timesteps"
+TimeStepControlGrowthDampingFactor="3.2"
+TimeStepControlGrowthRate="1.25"
+TimeStepControlMaxReductionTimeStep="0.1"
+TimeStepControlParameters="0.125;0.25;0.125;0.75;0.25"
+TimeStepControlRejectCompletedStep="0"
+TimeStepControlSafetyFactor="0.8"
+TimeStepControlTargetIterations="30"
+TimeStepControlTargetNewtonIterations="8"
+TimeStepControlTolerance="0.1"
+TimeStepControlToleranceTestVersion="standard"
+TimeStepVerbosity="1"
+ToleranceCnv="0.01"
+ToleranceCnvEnergy="0.01"
+ToleranceCnvEnergyRelaxed="1"
+ToleranceCnvRelaxed="1"
+ToleranceEnergyBalance="1e-07"
+ToleranceEnergyBalanceRelaxed="1e-06"
+ToleranceMb="1e-07"
+ToleranceMbRelaxed="1e-06"
+TolerancePressureMsWells="1000"
+ToleranceWellControl="1e-07"
+ToleranceWells="0.0001"
+UpdateEquationsScaling="0"
+UseAverageDensityMsWells="0"
+UseGmres="0"
+UseHyNe="0"
+UseImplicitIpr="1"
+UseMultisegmentWell="1"
+UseUpdateStabilization="1"
+VerifyGpuAwareMpi="0"
+VtkWriteAverageMolarMasses="0"
+VtkWriteDensities="1"
+VtkWriteDiffusionCoefficients="0"
+VtkWriteDofIndex="0"
+VtkWriteEffectiveDiffusionCoefficients="0"
+VtkWriteExtrusionFactor="0"
+VtkWriteFilterVelocities="0"
+VtkWriteFugacities="0"
+VtkWriteFugacityCoeffs="0"
+VtkWriteGasDissolutionFactor="0"
+VtkWriteGasFormationVolumeFactor="0"
+VtkWriteGasSaturationPressure="0"
+VtkWriteIntrinsicPermeabilities="0"
+VtkWriteMassFractions="0"
+VtkWriteMobilities="0"
+VtkWriteMolarities="0"
+VtkWriteMoleFractions="1"
+VtkWriteOilFormationVolumeFactor="0"
+VtkWriteOilSaturationPressure="0"
+VtkWriteOilVaporizationFactor="0"
+VtkWritePorosity="1"
+VtkWritePotentialGradients="0"
+VtkWritePressures="1"
+VtkWritePrimaryVars="0"
+VtkWritePrimaryVarsMeaning="0"
+VtkWriteProcessRank="0"
+VtkWriteRelativePermeabilities="1"
+VtkWriteSaturatedGasOilVaporizationFactor="0"
+VtkWriteSaturatedOilGasDissolutionFactor="0"
+VtkWriteSaturationRatios="0"
+VtkWriteSaturations="1"
+VtkWriteTemperature="1"
+VtkWriteTortuosities="0"
+VtkWriteTotalMassFractions="0"
+VtkWriteTotalMoleFractions="0"
+VtkWriteTracerConcentration="0"
+VtkWriteViscosities="0"
+VtkWriteWaterFormationVolumeFactor="0"
+WaterOnlyThreshold="1"
+WellGroupConstraintsMaxIterations="1"
+ZoltanImbalanceTol="1.1"
+ZoltanParams="graph"
+ZoltanPhgEdgeSizeThreshold="0.35"
+
+Reading deck file 'SPE5_2INJ_2PROD.DATA'
+    0 Reading RUNSPEC  in SPE5_2INJ_2PROD.DATA line 4
+    1 Reading UNIFIN   in SPE5_2INJ_2PROD.DATA line 5
+    2 Reading UNIFOUT  in SPE5_2INJ_2PROD.DATA line 6
+    3 Reading TITLE    in SPE5_2INJ_2PROD.DATA line 8
+    4 Reading WELLDIMS in SPE5_2INJ_2PROD.DATA line 11
+    5 Reading DIMENS   in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 4
+    6 Reading EQLDIMS  in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 7
+    7 Reading TABDIMS  in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 10
+    8 Reading OIL      in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 13
+    9 Reading GAS      in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 14
+   10 Reading WATER    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 15
+   11 Reading DISGAS   in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 16
+   12 Reading SOLVENT  in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 17
+   13 Reading MISCIBLE in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 19
+   14 Reading FIELD    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 22
+   15 Reading START    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 24
+   16 Reading WELLDIMS in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 27
+   17 Reading UNIFOUT  in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 30
+   18 Reading GRID     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 32
+   19 Reading NOECHO   in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 33
+   20 Reading INIT     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 35
+   21 Reading DX       in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 37
+   22 Reading DY       in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 39
+   23 Reading DZ       in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 41
+   24 Reading TOPS     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 44
+   25 Reading PORO     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 47
+   26 Reading PERMX    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 51
+   27 Reading PERMY    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 53
+   28 Reading PERMZ    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 55
+   29 Reading ECHO     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 58
+   30 Reading PROPS    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 59
+   31 Reading PVTW     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 63
+   32 Reading ROCK     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 73
+   33 Reading SWFN     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 79
+   34 Reading SGFN     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 96
+   35 Reading SOF3     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 114
+   36 Reading SOF2     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 135
+   37 Reading SSFN     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 150
+   38 Reading MISC     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 158
+   39 Reading PMISC    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 167
+   40 Reading DENSITY  in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 173
+   41 Reading SDENSITY in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 180
+   42 Reading TLMIXPAR in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 185
+   43 Reading PVDG     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 198
+   44 Reading PVDS     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 219
+   45 Reading PVTO     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 240
+   46 Reading SOLUTION in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 268
+   47 Reading EQUIL    in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 270
+   48 Reading RSVD     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 273
+   49 Reading SUMMARY  in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 277
+   50 Reading WBHP     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 279
+   51 Reading WGIR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 284
+   52 Reading WWIR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 289
+   53 Reading WOIR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 294
+   54 Reading FOPR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 299
+   55 Reading FGPR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 300
+   56 Reading FWPR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 301
+   57 Reading FWIR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 302
+   58 Reading FGIR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 303
+   59 Reading FWCT     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 304
+   60 Reading FGOR     in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 305
+   61 Reading SCHEDULE in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 308
+   62 Reading RPTRST   in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 310
+   63 Reading WELSPECS in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 313
+   64 Reading COMPDAT  in /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 319
+   65 Reading RPTRST   in SPE5_2INJ_2PROD.DATA line 17
+   66 Reading WELSPECS in SPE5_2INJ_2PROD.DATA line 20
+   67 Reading COMPDAT  in SPE5_2INJ_2PROD.DATA line 27
+   68 Reading WCONPROD in SPE5_2INJ_2PROD.DATA line 34
+   69 Reading WCONINJE in SPE5_2INJ_2PROD.DATA line 39
+   70 Reading TSTEP    in SPE5_2INJ_2PROD.DATA line 44
+
+Warning: Unsupported keywords or keyword items:
+
+  NOECHO: keyword not supported
+  In file: /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE, line 33
+
+  ECHO: keyword not supported
+  In file: /home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE, line 58
+
+Creating grid from keywords DX, DY, DZ and TOPS
+4 fluid phases are active
+
+Processing dynamic information from
+/home/kratos/opm_projects/SPE5-MultiWell-Study/SPE5_PERM_0.5X.BASE line 308
+Initializing report step 0/10 at 1987-01-01 0 DAYS line 308
+Processing keyword RPTRST at line 310
+Processing keyword WELSPECS at line 313
+Processing keyword COMPDAT at line 319
+Reading from: SPE5_2INJ_2PROD.DATA line 17
+Processing keyword RPTRST at line 17
+Processing keyword WELSPECS at line 20
+Processing keyword COMPDAT at line 27
+Processing keyword WCONPROD at line 34
+Processing keyword WCONINJE at line 39
+Complete report step 1 (365.25 DAYS) at 1988-01-01 (0 DAYS)
+
+Initializing report step 2/10 at 1988-01-01 (0 DAYS) line 44
+Complete report step 2 (365.25 DAYS) at 1988-12-31 (365.25 DAYS)
+
+Initializing report step 3/10 at 1988-12-31 (365.25 DAYS) line 44
+Complete report step 3 (365.25 DAYS) at 1989-12-31 (730.5 DAYS)
+
+Initializing report step 4/10 at 1989-12-31 (730.5 DAYS) line 44
+Complete report step 4 (365.25 DAYS) at 1991-01-01 (1095.75 DAYS)
+
+Initializing report step 5/10 at 1991-01-01 (1095.75 DAYS) line 44
+Complete report step 5 (365.25 DAYS) at 1992-01-01 (1461 DAYS)
+Report limit reached, see PRT-file for remaining Schedule initialization.
+
+Initializing report step 6/10 at 1992-01-01 (1461 DAYS) line 44
+Complete report step 6 (365.25 DAYS) at 1992-12-31 (1826.25 DAYS)
+
+Initializing report step 7/10 at 1992-12-31 (1826.25 DAYS) line 44
+Complete report step 7 (365.25 DAYS) at 1993-12-31 (2191.5 DAYS)
+
+Initializing report step 8/10 at 1993-12-31 (2191.5 DAYS) line 44
+Complete report step 8 (365.25 DAYS) at 1995-01-01 (2556.75 DAYS)
+
+Initializing report step 9/10 at 1995-01-01 (2556.75 DAYS) line 44
+Complete report step 9 (365.25 DAYS) at 1996-01-01 (2922 DAYS)
+
+Initializing report step 10/10 at 1996-01-01 (2922 DAYS) line 44
+Complete report step 10 (365.25 DAYS) at 1996-12-31 (3287.25 DAYS)
+
+
+Processing grid
+Total number of active cells: 147 / total pore volume: 65454545 RB
+
+Property tree for linear solvers:
+{
+    "maxiter": "20",
+    "tol": "0.0050000000000000001",
+    "verbosity": "0",
+    "solver": "bicgstab",
+    "preconditioner": {
+        "type": "cprw",
+        "use_well_weights": "false",
+        "add_wells": "true",
+        "weight_type": "trueimpes",
+        "pre_smooth": "0",
+        "post_smooth": "1",
+        "finesmoother": {
+            "type": "paroverilu0",
+            "relaxation": "1"
+        },
+        "verbosity": "0",
+        "coarsesolver": {
+            "maxiter": "1",
+            "tol": "0.10000000000000001",
+            "solver": "loopsolver",
+            "verbosity": "0",
+            "preconditioner": {
+                "type": "amg",
+                "alpha": "0.33333333333300003",
+                "relaxation": "1",
+                "iterations": "1",
+                "coarsenTarget": "1200",
+                "pre_smooth": "1",
+                "post_smooth": "1",
+                "beta": "0",
+                "smoother": "ilu0",
+                "verbosity": "0",
+                "maxlevel": "15",
+                "skip_isolated": "0",
+                "accumulate": "1",
+                "prolongationdamping": "1",
+                "maxdistance": "2",
+                "maxconnectivity": "15",
+                "maxaggsize": "6",
+                "minaggsize": "4"
+            }
+        }
+    }
+}
+
+
+
+================ Starting main simulation loop ===============
+
+
+Report step  0/10 at day 0/3652.5, date = 01-Jan-1987
+Using Newton nonlinear solver.
+
+Starting time step 0, stepsize 1 days, at day 0/365.25, date = 01-Jan-1987
+Restart file written for report step  0/10, date = 01-Jan-1987 00:00:00
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  0 (0.0sec)
+
+Starting time step 1, stepsize 3 days, at day 1/365.25, date = 02-Jan-1987
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  1 (0.0sec)
+
+Starting time step 2, stepsize 9 days, at day 4/365.25, date = 05-Jan-1987
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+Starting time step 3, stepsize 27 days, at day 13/365.25, date = 14-Jan-1987
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+Starting time step 4, stepsize 81 days, at day 40/365.25, date = 10-Feb-1987
+ Newton its= 4, linearizations= 5 (0.0sec), linear its=  5 (0.0sec)
+
+Starting time step 5, stepsize 122.125 days, at day 121/365.25, date = 02-May-1987
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+Starting time step 6, stepsize 122.125 days, at day 243.125/365.25, date = 01-Sep-1987
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  4 (0.0sec)
+
+
+Report step  1/10 at day 365.25/3652.5, date = 01-Jan-1988
+
+Starting time step 0, stepsize 182.625 days, at day 365.25/730.5, date = 01-Jan-1988
+Restart file written for report step  1/10, date = 01-Jan-1988 06:00:00
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+Starting time step 1, stepsize 182.625 days, at day 547.875/730.5, date = 01-Jul-1988
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step  2/10 at day 730.5/3652.5, date = 31-Dec-1988
+
+Starting time step 0, stepsize 182.625 days, at day 730.5/1095.75, date = 31-Dec-1988
+Restart file written for report step  2/10, date = 31-Dec-1988 12:00:00
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+Starting time step 1, stepsize 182.625 days, at day 913.125/1095.75, date = 02-Jul-1989
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step  3/10 at day 1095.75/3652.5, date = 31-Dec-1989
+
+Starting time step 0, stepsize 182.625 days, at day 1095.75/1461, date = 31-Dec-1989
+Restart file written for report step  3/10, date = 31-Dec-1989 18:00:00
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+Starting time step 1, stepsize 182.625 days, at day 1278.38/1461, date = 02-Jul-1990
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step  4/10 at day 1461/3652.5, date = 01-Jan-1991
+
+Starting time step 0, stepsize 182.625 days, at day 1461/1826.25, date = 01-Jan-1991
+Restart file written for report step  4/10, date = 01-Jan-1991 00:00:00
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+Starting time step 1, stepsize 182.625 days, at day 1643.62/1826.25, date = 02-Jul-1991
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step  5/10 at day 1826.25/3652.5, date = 01-Jan-1992
+
+Starting time step 0, stepsize 182.625 days, at day 1826.25/2191.5, date = 01-Jan-1992
+Restart file written for report step  5/10, date = 01-Jan-1992 06:00:00
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+Starting time step 1, stepsize 182.625 days, at day 2008.88/2191.5, date = 01-Jul-1992
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step  6/10 at day 2191.5/3652.5, date = 31-Dec-1992
+
+Starting time step 0, stepsize 182.625 days, at day 2191.5/2556.75, date = 31-Dec-1992
+Restart file written for report step  6/10, date = 31-Dec-1992 12:00:00
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+Starting time step 1, stepsize 182.625 days, at day 2374.12/2556.75, date = 02-Jul-1993
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step  7/10 at day 2556.75/3652.5, date = 31-Dec-1993
+
+Starting time step 0, stepsize 182.625 days, at day 2556.75/2922, date = 31-Dec-1993
+Restart file written for report step  7/10, date = 31-Dec-1993 18:00:00
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+Starting time step 1, stepsize 182.625 days, at day 2739.38/2922, date = 02-Jul-1994
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 3, linearizations= 4 (0.0sec), linear its=  3 (0.0sec)
+
+
+Report step  8/10 at day 2922/3652.5, date = 01-Jan-1995
+
+Starting time step 0, stepsize 182.625 days, at day 2922/3287.25, date = 01-Jan-1995
+Restart file written for report step  8/10, date = 01-Jan-1995 00:00:00
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+Starting time step 1, stepsize 182.625 days, at day 3104.62/3287.25, date = 02-Jul-1995
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+
+Report step  9/10 at day 3287.25/3652.5, date = 01-Jan-1996
+
+Starting time step 0, stepsize 182.625 days, at day 3287.25/3652.5, date = 01-Jan-1996
+Restart file written for report step  9/10, date = 01-Jan-1996 06:00:00
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+Starting time step 1, stepsize 182.625 days, at day 3469.88/3652.5, date = 01-Jul-1996
+
+Warning: Keyword 'DRAIN' is unhandled for output to restart file.
+
+Warning: Keyword 'POT' is unhandled for output to restart file.
+ Newton its= 2, linearizations= 3 (0.0sec), linear its=  2 (0.0sec)
+
+Restart file written for report step 10/10, date = 31-Dec-1996 12:00:00
+
+
+================    End of simulation     ===============
+
+Number of MPI processes:         1
+Threads per MPI process:         2
+Setup time:                      0.05 s
+  Deck input:                    0.04 s
+Number of timesteps:            25
+Simulation time:                 0.12 s
+  Assembly time:                 0.03 s (Wasted: 0.0 s; 0.0%)
+    Well assembly:               0.01 s (Wasted: 0.0 s; 0.0%)
+  Linear solve time:             0.04 s (Wasted: 0.0 s; 0.0%)
+    Linear setup:                0.03 s (Wasted: 0.0 s; 0.0%)
+  Props/update time:             0.01 s (Wasted: 0.0 s; 0.0%)
+  Pre/post step:                 0.03 s (Wasted: 0.0 s; 0.0%)
+  Output write time:             0.01 s
+Overall Linearizations:         87      (Wasted:     0; 0.0%)
+Overall Newton Iterations:      62      (Wasted:     0; 0.0%)
+Overall Linear Iterations:      61      (Wasted:     0; 0.0%)
+
+
+
+Error summary:
+Warnings          21
+Info              176
+Errors            0
+Bugs              0
+Debug             0
+Problems          0
+
