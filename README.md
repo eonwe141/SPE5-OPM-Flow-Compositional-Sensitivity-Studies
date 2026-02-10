@@ -1,4 +1,4 @@
-# Compositional Reservoir Simulation and Gas Injection Feasibility: Implications for CO2-EOR Using OPM Flow
+# Compositional Reservoir Simulation Sensitivity Studies: Grid, Permeability, and Well Configuration Analysis Using OPM Flow
 
 **Author:** Athar Nisar Padder  
 **Date:** February 2026  
@@ -48,5 +48,6 @@ If you use this data or workflow in your research, please cite:
 
 > Padder, A. N. (2026). Compositional Reservoir Simulation and Gas Injection Feasibility: Implications for CO2-EOR Using OPM Flow. GitHub Repository. https://github.com/ATHAR-NISAR-PADDER/OPM-Flow-Compositional-Sensitivity-Studies
 EOF
+
 
 
