@@ -46,8 +46,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 If you use this data or workflow in your research, please cite:
 
-> Padder, A. N. (2026). Compositional Reservoir Simulation Sensitivity Studies: Grid, Permeability, and Well Configuration Analysis Using OPM Flow. GitHub Repository. https://github.com/ATHAR-NISAR-PADDER/OPM-Flow-Compositional-Sensitivity-Studies
+> Padder, A. N. (2026). Compositional Reservoir Simulation Sensitivity Studies: Grid, Permeability, and Well Configuration Analysis Using OPM Flow. GitHub Repository. https://github.com/eonwe141/SPE5-OPM-Flow-Compositional-Sensitivity-Studies.git
 EOF
+
 
 
 
