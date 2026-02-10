@@ -4,6 +4,12 @@
 **Date:** February 2026  
 **Simulator:** OPM Flow 2025.10  
 
+> [!IMPORTANT]
+> **Data Availability Notice:**  
+> The full simulation result files (restart, summary, and debug files) for the Grid Refinement and Permeability Sensitivity studies exceed GitHub storage limits.  
+> They are hosted on **Zenodo** and can be downloaded here:  
+> **[DOI: 10.5281/zenodo.XXXXXXX](https://zenodo.org)** *(Replace with actual link after uploading)*
+
 ## Abstract
 
 This repository contains data, input decks, and analysis scripts for a comprehensive parametric sensitivity study of compositional gas injection in reservoir systems. Using the open-source OPM Flow simulator, this project investigates numerical stability, computational scaling, and operational envelopes for CO2-EOR conversion workflows. The analysis is divided into three integrated studies: (1) Grid Refinement, (2) Permeability Sensitivity, and (3) Multi-Well Configuration Optimization.
@@ -63,3 +69,4 @@ If you use this data or workflow in your research, please cite:
 
 > Padder, A. N. (2026). Compositional Reservoir Simulation and Gas Injection Feasibility: Implications for CO2-EOR Using OPM Flow. GitHub Repository. https://github.com/ATHAR-NISAR-PADDER/OPM-Flow-Compositional-Sensitivity-Studies
 EOF
+
