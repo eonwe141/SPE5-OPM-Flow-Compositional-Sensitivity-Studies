@@ -1,5 +1,5 @@
 # ============================================
-# OPM Flow Simulation Output Files (General)
+# OPM Flow Simulation Output Files
 # ============================================
 # Large binary restart and summary files
 *.UNRST
@@ -18,10 +18,6 @@
 *.VTU
 *.PVD
 
-# ============================================
-# EXCEPTIONS: Keep specific baseline results
-# (Allows reproducibility without bloating the repo)
-# ============================================
 
 # 1. Grid Refinement Study: Keep coarse & refined 12k baselines
 !01_Grid_Refinement_Study/results/coarse_12k/*.UNRST
@@ -60,4 +56,5 @@ Thumbs.db
 *.swo
 *~
 .vscode/
+
 .idea/
