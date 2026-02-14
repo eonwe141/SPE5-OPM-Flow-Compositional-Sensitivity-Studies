@@ -8,7 +8,7 @@
 > **Data Availability Notice:**  
 > The full simulation result files (restart, summary, and debug files) for the Grid Refinement and Permeability Sensitivity studies exceed GitHub storage limits.  
 > They are hosted on **Zenodo** and can be downloaded here:  
-> **[DOI: 10.5281/zenodo.XXXXXXX](https://zenodo.org)** *(Replace with actual link after uploading)*
+> **[https://doi.org/10.5281/zenodo.18643103]**
 
 ## Abstract
 
@@ -48,6 +48,7 @@ If you use this data or workflow in your research, please cite:
 
 > Padder, A. N. (2026). Compositional Reservoir Simulation Sensitivity Studies: Grid, Permeability, and Well Configuration Analysis Using OPM Flow. GitHub Repository. https://github.com/eonwe141/SPE5-OPM-Flow-Compositional-Sensitivity-Studies.git
 EOF
+
 
 
 
