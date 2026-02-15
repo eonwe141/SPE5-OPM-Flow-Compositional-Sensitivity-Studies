@@ -10,6 +10,14 @@
 > They are hosted on **Zenodo** and can be downloaded here:  
 > **[https://doi.org/10.5281/zenodo.18643103]**
 
+##  Publication
+
+**Padder, A.N.** (2026). *Compositional Reservoir Simulation Sensitivity Studies: Grid, Permeability, and Well Configuration Analysis Using OPM Flow.* EarthArXiv Preprints.
+
+[![EarthArXiv DOI](https://img.shields.io/badge/DOI-10.31223%2FX5CB4S-blue)](https://doi.org/10.31223/X5PF50)
+
+**Full Paper:** [https://doi.org/10.31223/X5CB4S](https://doi.org/10.31223/X5PF50)
+
 ## Abstract
 
 This repository contains data, and input decks for a comprehensive parametric sensitivity study of compositional gas injection in reservoir systems. Using the open-source OPM Flow simulator, this project investigates numerical stability, computational scaling, and operational envelopes for CO2-EOR conversion workflows. The analysis is divided into three integrated studies: (1) Grid Refinement, (2) Permeability Sensitivity, and (3) Multi-Well Configuration Optimization.
@@ -48,6 +56,7 @@ If you use this data or workflow in your research, please cite:
 
 > Padder, A. N. (2026). Compositional Reservoir Simulation Sensitivity Studies: Grid, Permeability, and Well Configuration Analysis Using OPM Flow. GitHub Repository. https://github.com/eonwe141/SPE5-OPM-Flow-Compositional-Sensitivity-Studies.git
 EOF
+
 
 
 
